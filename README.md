@@ -7,5 +7,5 @@ android
 * basic layout
 * The toast implemented.
 
-![](screenshots/Screen Shot 2022-12-01 at 7.15.09 PM.png)
-![](screenshots/Screen Shot 2022-12-01 at 7.15.14 PM.png)
+![1](screenshots/DEC1.1.png)
+![2](screenshots/DEC1.2.png)
