@@ -99,30 +99,30 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/arma
 		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:13:9-48
 	android:dataExtractionRules
 		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:7:9-65
-activity#com.armasconi.taskmaster.Settings
+activity#com.armasconi.taskmaster.activities.Settings
 ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:15:9-21:20
 	android:exported
 		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:16:13-37
+		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:16:13-48
 meta-data#android.app.lib_name
 ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:18:13-20:36
 	android:value
 		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:20:17-33
 	android:name
 		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:19:17-52
-activity#com.armasconi.taskmaster.TaskDetails
+activity#com.armasconi.taskmaster.activities.TaskDetails
 ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:22:9-28:20
 	android:exported
 		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:23:13-40
-activity#com.armasconi.taskmaster.MainActivity
+		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:23:13-51
+activity#com.armasconi.taskmaster.activities.MainActivity
 ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:29:9-41:20
 	android:exported
 		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:31:13-36
 	android:name
-		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:30:13-41
+		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:30:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
@@ -133,12 +133,12 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:35:17-77
 	android:name
 		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:35:27-74
-activity#com.armasconi.taskmaster.AllTasks
+activity#com.armasconi.taskmaster.activities.AllTasks
 ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:42:9-44:40
 	android:exported
 		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:43:13-37
+		ADDED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml:43:13-48
 uses-sdk
 INJECTED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/AndroidManifest.xml

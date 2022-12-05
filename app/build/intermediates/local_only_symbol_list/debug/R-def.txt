@@ -27,11 +27,13 @@ layout activity_all_tasks
 layout activity_main
 layout activity_settings
 layout activity_task_details
+layout fragment_task_display
 mipmap ic_launcher
 mipmap ic_launcher_round
 string add_task
 string all_tasks
 string app_name
+string hello_blank_fragment
 string lorem
 string my_tasks
 string task
