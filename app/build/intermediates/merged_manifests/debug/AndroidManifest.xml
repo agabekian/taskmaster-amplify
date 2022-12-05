@@ -20,6 +20,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Taskmaster" >
         <activity
+            android:name="com.armasconi.taskmaster.Settings"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.armasconi.taskmaster.TaskDetails"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.armasconi.taskmaster.MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -34,8 +48,7 @@
         </activity>
         <activity
             android:name="com.armasconi.taskmaster.AllTasks"
-            android:exported="false" >
-        </activity>
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

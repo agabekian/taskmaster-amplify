@@ -6,11 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/btnTask1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My Tasks"
+        android:layout_marginTop="132dp"
+        android:text="Exam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <Button
+        android:id="@+id/btnTask2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Learn French"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTask1" />
+
+    <TextView
+        android:id="@+id/MainTVTasksGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@android:color/holo_orange_dark"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,14 +42,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.122" />
 
+
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="130dp"
         android:layout_height="55dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="444dp"
+        android:layout_marginTop="460dp"
         android:layout_marginEnd="26dp"
-        android:text="Add Task"
+        android:backgroundTint="@color/button_background_color"
+        android:text="@string/add_task"
         app:layout_constraintEnd_toStartOf="@+id/btnAll"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,21 +62,55 @@
         android:layout_width="130dp"
         android:layout_height="55dp"
         android:layout_marginStart="26dp"
-        android:layout_marginTop="444dp"
+        android:layout_marginTop="460dp"
         android:layout_marginEnd="68dp"
-        android:text="All Tasks"
+        android:backgroundTint="@color/button_background_color"
+        android:text="@string/all_tasks"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnAdd"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="287dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Settings"
+
+        app:iconTint="#FAF6DA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#600A0A" />
+
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="318dp"
-        android:layout_height="42dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="52dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Task"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="169dp" />
+        android:text="@string/task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnTask3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Find Job"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTask2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1274,6 +1274,7 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color button_background_color
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -2645,6 +2646,7 @@ id BOTTOM_START
 id CTRL
 id FUNCTION
 id META
+id MainTVTasksGreeting
 id NO_DEBUG
 id SHIFT
 id SHOW_ALL
@@ -2653,6 +2655,8 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id UserProfileETUsername
+id UserProfileSaveBttn
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2739,6 +2743,10 @@ id bounceEnd
 id bounceStart
 id btnAdd
 id btnAll
+id btnSettings
+id btnTask1
+id btnTask2
+id btnTask3
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3063,6 +3071,8 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id taskTextView
+id taskTextView2
 id text
 id text2
 id textEnd
@@ -3243,6 +3253,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_all_tasks
 layout activity_main
+layout activity_settings
+layout activity_task_details
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3347,6 +3359,8 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string add_task
+string all_tasks
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -3368,6 +3382,7 @@ string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string lorem
 string m3_sys_motion_easing_emphasized
 string m3_sys_motion_easing_emphasized_accelerate
 string m3_sys_motion_easing_emphasized_decelerate
@@ -3455,6 +3470,7 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string my_tasks
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3462,6 +3478,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string task
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
