@@ -1816,6 +1816,7 @@ int color mtrl_textinput_focused_box_stroke_color 0x7f050243
 int color mtrl_textinput_hovered_box_stroke_color 0x7f050244
 int color notification_action_color_filter 0x7f050245
 int color notification_icon_bg_color 0x7f050246
+int color offwhite 0x7f050263
 int color primary_dark_material_dark 0x7f050247
 int color primary_dark_material_light 0x7f050248
 int color primary_material_dark 0x7f050249
@@ -2557,6 +2558,8 @@ int drawable design_ic_visibility 0x7f07007d
 int drawable design_ic_visibility_off 0x7f07007e
 int drawable design_password_eye 0x7f07007f
 int drawable design_snackbar_background 0x7f070080
+int drawable ic_baseline_ac_unit_24 0x7f0700d3
+int drawable ic_baseline_surfing_24 0x7f0700d4
 int drawable ic_clock_black_24dp 0x7f070081
 int drawable ic_keyboard_black_24dp 0x7f070082
 int drawable ic_launcher_background 0x7f070083
@@ -2645,10 +2648,8 @@ int id BOTTOM_START 0x7f080002
 int id CTRL 0x7f080003
 int id FUNCTION 0x7f080004
 int id META 0x7f080005
-int id MainTVTasksGreeting 0x7f080006
 int id MyTaskFrag 0x7f080007
 int id MyTaskFragTVName 0x7f080008
-int id MyTaskFragTVState 0x7f080009
 int id MyTaskFragTVType 0x7f0801ef
 int id NO_DEBUG 0x7f08000a
 int id SHIFT 0x7f08000b
@@ -2747,7 +2748,6 @@ int id bounceEnd 0x7f080067
 int id bounceStart 0x7f080068
 int id btnAdd 0x7f080069
 int id btnMainActivity_Tasks 0x7f08006b
-int id btnSettings 0x7f08006c
 int id buttonPanel 0x7f080070
 int id cache_measures 0x7f080071
 int id callMeasure 0x7f080072
@@ -2913,6 +2913,7 @@ int id material_timepicker_ok_button 0x7f080111
 int id material_timepicker_view 0x7f080112
 int id material_value_index 0x7f080113
 int id matrix 0x7f080114
+int id menuSettingsItem 0x7f0801f3
 int id message 0x7f080115
 int id middle 0x7f080116
 int id mini 0x7f080117
@@ -2957,6 +2958,7 @@ int id navigation_header_container 0x7f08013d
 int id never 0x7f08013e
 int id neverCompleteToEnd 0x7f08013f
 int id neverCompleteToStart 0x7f080140
+int id new_game 0x7f0801f2
 int id noScroll 0x7f080141
 int id noState 0x7f080142
 int id none 0x7f080143
@@ -3335,6 +3337,7 @@ int layout select_dialog_item_material 0x7f0b0069
 int layout select_dialog_multichoice_material 0x7f0b006a
 int layout select_dialog_singlechoice_material 0x7f0b006b
 int layout support_simple_spinner_dropdown_item 0x7f0b006c
+int menu menu 0x7f130000
 int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_round 0x7f0d0001
 int plurals mtrl_badge_content_description 0x7f0e0000
@@ -3386,6 +3389,7 @@ int string exposed_dropdown_menu_content_description 0x7f0f002c
 int string fab_transformation_scrim_behavior 0x7f0f002d
 int string fab_transformation_sheet_behavior 0x7f0f002e
 int string hello_blank_fragment 0x7f0f002f
+int string help 0x7f0f0094
 int string hide_bottom_view_on_scroll_behavior 0x7f0f0030
 int string icon_content_description 0x7f0f0031
 int string item_view_role_description 0x7f0f0032
@@ -3478,12 +3482,14 @@ int string mtrl_switch_track_path 0x7f0f0088
 int string mtrl_timepicker_cancel 0x7f0f0089
 int string mtrl_timepicker_confirm 0x7f0f008a
 int string my_tasks 0x7f0f008b
+int string new_game 0x7f0f0095
 int string password_toggle_content_description 0x7f0f008c
 int string path_password_eye 0x7f0f008d
 int string path_password_eye_mask_strike_through 0x7f0f008e
 int string path_password_eye_mask_visible 0x7f0f008f
 int string path_password_strike_through 0x7f0f0090
 int string search_menu_title 0x7f0f0091
+int string settings 0x7f0f0096
 int string status_bar_notification_info_overflow 0x7f0f0092
 int string task 0x7f0f0093
 int style AlertDialog_AppCompat 0x7f100000

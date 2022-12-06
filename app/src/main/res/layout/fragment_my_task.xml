@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout"
     android:layout_width="wrap_content"
-    android:layout_height="100dp"
-    android:background="#B0F4F2"
+    android:layout_height="wrap_content"
+    android:background="#ECEDED"
     tools:context=".fragments.TaskFrag">
 
   <!-- TODO: Update blank fragment layout -->
@@ -14,9 +14,10 @@
       android:id="@+id/MyTaskFrag"
       android:layout_width="390dp"
       android:layout_height="32dp"
-      android:layout_marginTop="44dp"
-      android:background="#F7C7C7"
+      android:background="#A9A5AA"
+      android:textSize="14sp"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,37 +25,29 @@
       android:id="@+id/MyTaskFragTVName"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginStart="4dp"
-      android:layout_marginTop="56dp"
-      android:layout_marginEnd="244dp"
+      android:layout_marginTop="4dp"
       android:text="title"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+      android:textColor="#FBF8F8"
+      android:textSize="16sp"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintHorizontal_bias="0.466"
       app:layout_constraintHorizontal_chainStyle="spread"
-      app:layout_constraintStart_toEndOf="@+id/MyTaskFrag"
+      app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
-  <TextView
-      android:id="@+id/MyTaskFragTVState"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="120dp"
-      android:text="TextView"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintStart_toEndOf="@+id/MyTaskFrag"
-      app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
       android:id="@+id/MyTaskFragTVType"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginStart="109dp"
-      android:layout_marginEnd="153dp"
-      android:layout_marginBottom="4dp"
+      android:layout_marginBottom="16dp"
       android:text="body"
+      android:textColor="#5E5858"
+      android:textSize="16sp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.16"
+      app:layout_constraintHorizontal_bias="0.077"
       app:layout_constraintStart_toStartOf="parent" />
 
   <CheckBox
@@ -64,6 +57,7 @@
       android:layout_marginEnd="32dp"
 
       android:text="state"
+      android:textColor="#E1E1E1"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/MyTaskFrag"

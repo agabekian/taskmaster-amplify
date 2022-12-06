@@ -1,10 +1,12 @@
 package com.armasconi.taskmaster.activities;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.view.MenuItem;
 import android.widget.CheckedTextView;
 import android.widget.TextView;
 
@@ -16,14 +18,29 @@ public class TaskDetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_details);
+
+        //BACK BUTTON - DRY?
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true); //back button
+        actionBar.setHomeButtonEnabled(true);
         displayTaskName();
         displayTaskBody();
     }
 
+
+    @Override
+    //actual back button functionality as per AI
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     public void displayTaskName() {
         Intent callingIntent = getIntent();
         String textStarter = null;

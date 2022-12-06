@@ -48,7 +48,7 @@ public class TaskRecyclerViewAdapter extends androidx.recyclerview.widget.Recycl
         String myTaskName = allTasks.get(position).getTitle();
         String myTaskBody = allTasks.get(position).getBody();
         Boolean myTaskState = allTasks.get(position).getState();
-        taskRecyclerTextViewHolder.setText(position + ". " + myTaskName); //index
+        taskRecyclerTextViewHolder.setText((position + 1) + ". " + myTaskName); //index
         taskRecyclerTypeViewHolder.setText(myTaskBody);
         // TODO Step 3-3: (In RecyclerViewAdapter.onBindViewHolder()) Create OnClickListener, make an Intent inside it, and call this Intent with an Extra to go to another Activity
         View myTaskViewHolder = holder.itemView;

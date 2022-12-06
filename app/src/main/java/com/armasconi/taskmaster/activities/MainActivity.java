@@ -1,13 +1,16 @@
 package com.armasconi.taskmaster.activities;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActionBar;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.content.Intent;
 import android.preference.PreferenceManager;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,6 +20,24 @@ import com.armasconi.taskmaster.R;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TASK_NAME = "DUDE";
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) { //menu display
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) { //menu func
+        switch (item.getItemId()) {
+            case R.id.menuSettingsItem:
+                Intent i = new Intent(this,Settings.class);
+                this.startActivity(i);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,31 +66,23 @@ public class MainActivity extends AppCompatActivity {
         });
         setupBtns();
         setupGreeting();
+
     }
 
     public void setupGreeting() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         String username = preferences.getString(Settings.USERNAME_TAG, "No username");
-        ((TextView) findViewById(R.id.MainTVTasksGreeting)).setText(username + "'s Tasks");
+//        ((TextView) findViewById(R.id.MainTVTasksGreeting)).setText(username + "'s Tasks"); v//Main title
     }
 
     public void setupBtns() {
-        Button goToSettingsBtn = MainActivity.this.findViewById(R.id.btnSettings);
         Button goToAllTasksBtn = MainActivity.this.findViewById(R.id.btnMainActivity_Tasks);
-//        Button btnDisplayTask1 = MainActivity.this.findViewById(R.id.btnTask1);
-//        Button btnDisplayTask2 = MainActivity.this.findViewById(R.id.btnTask2);
-//        Button btnDisplayTask3 = MainActivity.this.findViewById(R.id.btnTask3);
-        goToSettingsBtn.setOnClickListener(view -> {
-            Intent goToSettings = new Intent(this, Settings.class);
-            startActivity(goToSettings);
-        });
-
         goToAllTasksBtn.setOnClickListener(view -> {
             Button btnAllTasks = findViewById(R.id.btnMainActivity_Tasks);
             Intent goToTasks = new Intent(this, MyTasksActivity.class);
-                startActivity(goToTasks);
+            startActivity(goToTasks);
         });
-            //TODO: send extra
+        //TODO: send extra
         // set up the intent (Current context.this, class to go to Class.class)
 //        Intent goDisplayTask1 = new Intent(this, TaskDetails.class);
 //        btnDisplayTask1.setOnClickListener(view -> {

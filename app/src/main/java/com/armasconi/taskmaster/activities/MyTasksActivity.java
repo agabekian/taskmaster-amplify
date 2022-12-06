@@ -54,7 +54,10 @@ public class MyTasksActivity extends AppCompatActivity {
         allTasks.add(new MyTask("Get some", "LA or SD?", false));
         allTasks.add(new MyTask("Ideas for therapist", "Everett", false));
         allTasks.add(new MyTask("Get some", "LA or SD?", false));
-
+        allTasks.add(new MyTask("Learn French", "Merci Pardon", true));
+        allTasks.add(new MyTask("Get in shape", "work work work", true));
+        allTasks.add(new MyTask("Get a billion", "Dollars or roubles?", false));
+        allTasks.add(new MyTask("Learn Italian", "Ciao", true));
 
         // TODO Step 1-2:  Grab the RecyclerView
         RecyclerView superPetRV = findViewById(R.id.SuperPetRecyclerView);
