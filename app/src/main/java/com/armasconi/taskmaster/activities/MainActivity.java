@@ -17,6 +17,7 @@ import com.armasconi.taskmaster.R;
 public class MainActivity extends AppCompatActivity {
     public static final String TASK_NAME = "DUDE";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,38 +53,42 @@ public class MainActivity extends AppCompatActivity {
 
     public void setupBtns() {
         Button goToSettingsBtn = MainActivity.this.findViewById(R.id.btnSettings);
-        Button goToAllTasksBtn = MainActivity.this.findViewById(R.id.btnAll);
-        Button btnDisplayTask1 = MainActivity.this.findViewById(R.id.btnTask1);
-        Button btnDisplayTask2 = MainActivity.this.findViewById(R.id.btnTask2);
-        Button btnDisplayTask3 = MainActivity.this.findViewById(R.id.btnTask3);
+        Button goToAllTasksBtn = MainActivity.this.findViewById(R.id.btnMainActivity_Tasks);
+//        Button btnDisplayTask1 = MainActivity.this.findViewById(R.id.btnTask1);
+//        Button btnDisplayTask2 = MainActivity.this.findViewById(R.id.btnTask2);
+//        Button btnDisplayTask3 = MainActivity.this.findViewById(R.id.btnTask3);
         goToSettingsBtn.setOnClickListener(view -> {
-            // set up the intent (Current context.this, class to go to Class.class)
             Intent goToSettings = new Intent(this, Settings.class);
-            // launch the intent
             startActivity(goToSettings);
         });
-        //TODO: send extra
-        Intent goDisplayTask1 = new Intent(this, TaskDetails.class);
-        btnDisplayTask1.setOnClickListener(view -> {
-            goDisplayTask1.putExtra(TASK_NAME, btnDisplayTask1.getText().toString());
-            startActivity(goDisplayTask1);
 
-        });
-        Intent goDisplayTask2 = new Intent(this, TaskDetails.class);
-        btnDisplayTask2.setOnClickListener(view -> {
-            goDisplayTask2.putExtra(TASK_NAME, btnDisplayTask2.getText().toString());
-            startActivity(goDisplayTask2);
-        });
-
-        Intent goDisplayTask3 = new Intent(this, TaskDetails.class);
-        btnDisplayTask3.setOnClickListener(view -> {
-            goDisplayTask3.putExtra(TASK_NAME, btnDisplayTask3.getText().toString());
-            startActivity(goDisplayTask3);
-        });
-        // setting up routing logic with intents. Intents are the highway between activities
         goToAllTasksBtn.setOnClickListener(view -> {
-            Intent goToAllTasks = new Intent(this, AllTasks.class);
-            startActivity(goToAllTasks);
+            Button btnAllTasks = findViewById(R.id.btnMainActivity_Tasks);
+            Intent goToTasks = new Intent(this, MyTasksActivity.class);
+                startActivity(goToTasks);
         });
+            //TODO: send extra
+        // set up the intent (Current context.this, class to go to Class.class)
+//        Intent goDisplayTask1 = new Intent(this, TaskDetails.class);
+//        btnDisplayTask1.setOnClickListener(view -> {
+//            goDisplayTask1.putExtra(TASK_NAME, btnDisplayTask1.getText().toString());
+        // launch the intent
+//            startActivity(goDisplayTask1);
+//
+//        });
+//        Intent goDisplayTask2 = new Intent(this, TaskDetails.class);
+//        btnDisplayTask2.setOnClickListener(view -> {
+//            goDisplayTask2.putExtra(TASK_NAME, btnDisplayTask2.getText().toString());
+//            startActivity(goDisplayTask2);
+//        });
+//
+//        Intent goDisplayTask3 = new Intent(this, TaskDetails.class);
+//        btnDisplayTask3.setOnClickListener(view -> {
+//            goDisplayTask3.putExtra(TASK_NAME, btnDisplayTask3.getText().toString());
+//            startActivity(goDisplayTask3);
+//        });
+//        // setting up routing logic with intents. Intents are the highway between activities
+
+
     }
 }

@@ -6,27 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".activities.MainActivity">
 
-    <Button
-        android:id="@+id/btnTask1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
-        android:text="Exam"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+<!--    <Button-->
+<!--        android:id="@+id/btnTask1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="132dp"-->
+<!--        android:text="Exam"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />-->
 
-    <Button
-        android:id="@+id/btnTask2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Learn French"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnTask1" />
+<!--    <Button-->
+<!--        android:id="@+id/btnTask2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:text="Learn French"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btnTask1" />-->
 
     <TextView
         android:id="@+id/MainTVTasksGreeting"
@@ -52,13 +52,13 @@
         android:layout_marginEnd="26dp"
         android:backgroundTint="@color/button_background_color"
         android:text="@string/add_task"
-        app:layout_constraintEnd_toStartOf="@+id/btnAll"
+        app:layout_constraintEnd_toStartOf="@+id/btnMainActivity_Tasks"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <Button
-        android:id="@+id/btnAll"
+        android:id="@+id/btnMainActivity_Tasks"
         android:layout_width="130dp"
         android:layout_height="55dp"
         android:layout_marginStart="26dp"
@@ -101,16 +101,24 @@
         app:layout_constraintStart_toStartOf="parent"
         android:autofillHints="" />
 
-    <Button
-        android:id="@+id/btnTask3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Find Job"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnTask2" />
+<!--    <Button-->
+<!--        android:id="@+id/btnTask3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:text="Find Job"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btnTask2" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnMainActivity_Tasks"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Button"-->
+<!--        tools:layout_editor_absoluteX="170dp"-->
+<!--        tools:layout_editor_absoluteY="604dp" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

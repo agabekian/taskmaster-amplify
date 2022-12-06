@@ -15,7 +15,6 @@ public class Settings extends AppCompatActivity {
     SharedPreferences preferences;
     public static final String USERNAME_TAG = "username";
 
-    //
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +44,4 @@ public class Settings extends AppCompatActivity {
     //1. collect the input
     // 2. set up on click for the save bttn
     //  a. save into shared prefs
-
-
 }

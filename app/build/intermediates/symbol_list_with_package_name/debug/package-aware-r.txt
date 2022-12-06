@@ -2647,12 +2647,17 @@ id CTRL
 id FUNCTION
 id META
 id MainTVTasksGreeting
+id MyTaskFrag
+id MyTaskFragTVName
+id MyTaskFragTVState
+id MyTaskFragTVType
 id NO_DEBUG
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id SuperPetRecyclerView
 id TOP_END
 id TOP_START
 id UserProfileETUsername
@@ -2742,11 +2747,8 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnAdd
-id btnAll
+id btnMainActivity_Tasks
 id btnSettings
-id btnTask1
-id btnTask2
-id btnTask3
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2845,6 +2847,7 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id frameLayout
 id frost
 id fullscreen_header
 id ghost_view
@@ -3071,6 +3074,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id taskStatusView
 id taskTextView
 id taskTextView2
 id text
@@ -3253,6 +3257,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_all_tasks
 layout activity_main
+layout activity_my_task
 layout activity_settings
 layout activity_task_details
 layout custom_dialog
@@ -3271,6 +3276,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_my_task
 layout fragment_task_display
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
