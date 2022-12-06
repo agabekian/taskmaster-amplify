@@ -2,6 +2,7 @@ package com.armasconi.taskmaster.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -17,13 +18,14 @@ import com.armasconi.taskmaster.R;
 public class MainActivity extends AppCompatActivity {
     public static final String TASK_NAME = "DUDE";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button submitBtn = MainActivity.this.findViewById(R.id.btnAdd);        //1. get an UI element by id
+
+        Button submitBtn = MainActivity.this.findViewById(R.id.btnAdd);     //1. get an UI element by id
 
         submitBtn.setOnClickListener(view -> {                              //2. event listener
             Context context = getApplicationContext();

@@ -1,10 +1,12 @@
 package com.armasconi.taskmaster.activities;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -19,10 +21,27 @@ public class Settings extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true); //back button
+        actionBar.setHomeButtonEnabled(true);
+
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
         saveValuesToSharedPrefs();
-    }
 
+
+}
+
+    @Override
+    //actual back button functionality as per AI
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     public void saveValuesToSharedPrefs() {
         // Setup the editor -> sharedPrefs is read only by default
         SharedPreferences.Editor preferenceEditor = preferences.edit();
