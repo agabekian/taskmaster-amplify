@@ -14,6 +14,7 @@ import com.armasconi.taskmaster.R;
 import com.armasconi.taskmaster.activities.MyTasksActivity;
 import com.armasconi.taskmaster.activities.TaskDetails;
 import com.armasconi.taskmaster.models.MyTask;
+import com.armasconi.taskmaster.models.TaskStateEnum;
 
 import java.util.List;
 
@@ -47,7 +48,7 @@ public class TaskRecyclerViewAdapter extends androidx.recyclerview.widget.Recycl
 
         String myTaskName = allTasks.get(position).getTitle();
         String myTaskBody = allTasks.get(position).getBody();
-        Boolean myTaskState = allTasks.get(position).getState();
+        TaskStateEnum myTaskState = allTasks.get(position).getState();
         taskRecyclerTextViewHolder.setText((position + 1) + ". " + myTaskName); //index
         taskRecyclerTypeViewHolder.setText(myTaskBody);
         // TODO Step 3-3: (In RecyclerViewAdapter.onBindViewHolder()) Create OnClickListener, make an Intent inside it, and call this Intent with an Extra to go to another Activity
