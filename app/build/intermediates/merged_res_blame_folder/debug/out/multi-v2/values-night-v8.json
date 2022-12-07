@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.armasconi.taskmaster.app-mergeDebugResources-27:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.armasconi.taskmaster.app-mergeDebugResources-30:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/Users/armasconi/AndroidStudioProjects/taskmaster/app/src/main/res/values-night/themes.xml",

@@ -2643,6 +2643,10 @@ int drawable test_level_drawable 0x7f0700d0
 int drawable tooltip_frame_dark 0x7f0700d1
 int drawable tooltip_frame_light 0x7f0700d2
 int id ALT 0x7f080000
+int id AddATaskETName 0x7f0801f4
+int id AddTaskBody 0x7f0801f5
+int id AddTaskSaveBttn 0x7f0801f6
+int id AddTaskSpinnerState 0x7f0801f7
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
 int id CTRL 0x7f080003
@@ -3256,6 +3260,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_add_task 0x7f0b006d
 int layout activity_all_tasks 0x7f0b001c
 int layout activity_main 0x7f0b001d
 int layout activity_my_task 0x7f0b001e

@@ -14,7 +14,6 @@ import com.armasconi.taskmaster.R;
 import com.armasconi.taskmaster.activities.MyTasksActivity;
 import com.armasconi.taskmaster.activities.TaskDetails;
 import com.armasconi.taskmaster.models.MyTask;
-import com.armasconi.taskmaster.models.TaskStateEnum;
 
 import java.util.List;
 
@@ -39,28 +38,44 @@ public class TaskRecyclerViewAdapter extends androidx.recyclerview.widget.Recycl
         // TODO Step 1-9: (In RecyclerViewAdapter.onCreateViewHolder()) Attach Fragment to ViewHolder
         return new MyTaskViewHolder(myTaskTextViewName);
     }
-
     @Override
     public void onBindViewHolder(@NonNull MyTaskViewHolder holder, int position) {
         // TODO Step 2-4: (In RecyclerViewAdapter.onBindViewHolder()) Bind data items to Fragments inside of ViewHolders
-        TextView taskRecyclerTextViewHolder = holder.itemView.findViewById(R.id.MyTaskFragTVName);
-        TextView taskRecyclerTypeViewHolder = holder.itemView.findViewById(R.id.MyTaskFragTVType);
-
-        String myTaskName = allTasks.get(position).getTitle();
-        String myTaskBody = allTasks.get(position).getBody();
-        TaskStateEnum myTaskState = allTasks.get(position).getState();
-        taskRecyclerTextViewHolder.setText((position + 1) + ". " + myTaskName); //index
-        taskRecyclerTypeViewHolder.setText(myTaskBody);
+        TextView taskFragmentTextViewName = holder.itemView.findViewById(R.id.MyTaskFragTVName);
+        // TODO Step 6-2 refactor the rendering
+        MyTask task = allTasks.get(position);
+        taskFragmentTextViewName.setText((position+1) + ". " + task.getTitle()
+                + "\n" + task.getState()
+                + "\n" + task.getDatePosted());
         // TODO Step 3-3: (In RecyclerViewAdapter.onBindViewHolder()) Create OnClickListener, make an Intent inside it, and call this Intent with an Extra to go to another Activity
-        View myTaskViewHolder = holder.itemView;
-        myTaskViewHolder.setOnClickListener(v -> {
-            Intent goToAllTasks = new Intent(callingActivity, TaskDetails.class);
-            goToAllTasks.putExtra(MyTasksActivity.MY_TASK_NAME, myTaskName);
-            goToAllTasks.putExtra(MyTasksActivity.MY_TASK_BODY, myTaskBody);
-            goToAllTasks.putExtra(String.valueOf(MyTasksActivity.MY_TASK_STATE), myTaskState);
-            callingActivity.startActivity(goToAllTasks);
+        View taskItemView = holder.itemView;
+        taskItemView.setOnClickListener(v -> {
+            Intent goToOrderFormIntent = new Intent(callingActivity, TaskDetails.class);
+            goToOrderFormIntent.putExtra(MyTasksActivity.MY_TASK_NAME, task.getTitle());
+            callingActivity.startActivity(goToOrderFormIntent);
         });
     }
+//    @Override
+//    public void onBindViewHolder(@NonNull MyTaskViewHolder holder, int position) {
+//        // TODO Step 2-4: (In RecyclerViewAdapter.onBindViewHolder()) Bind data items to Fragments inside of ViewHolders
+//        TextView taskRecyclerTextViewHolder = holder.itemView.findViewById(R.id.MyTaskFragTVName);
+//        TextView taskRecyclerTypeViewHolder = holder.itemView.findViewById(R.id.MyTaskFragTVType);
+//
+//        String myTaskName = allTasks.get(position).getTitle();
+//        String myTaskBody = allTasks.get(position).getBody();
+//        TaskStateEnum myTaskState = allTasks.get(position).getState();
+//        taskRecyclerTextViewHolder.setText((position + 1) + ". " + myTaskName); //index
+//        taskRecyclerTypeViewHolder.setText(myTaskBody);
+//        // TODO Step 3-3: (In RecyclerViewAdapter.onBindViewHolder()) Create OnClickListener, make an Intent inside it, and call this Intent with an Extra to go to another Activity
+//        View myTaskViewHolder = holder.itemView;
+//        myTaskViewHolder.setOnClickListener(v -> {
+//            Intent goToAllTasks = new Intent(callingActivity, TaskDetails.class);
+//            goToAllTasks.putExtra(MyTasksActivity.MY_TASK_NAME, myTaskName);
+//            goToAllTasks.putExtra(MyTasksActivity.MY_TASK_BODY, myTaskBody);
+//            goToAllTasks.putExtra(String.valueOf(MyTasksActivity.MY_TASK_STATE), myTaskState);
+//            callingActivity.startActivity(goToAllTasks);
+//        });
+//    }
 
     @Override
     public int getItemCount() {

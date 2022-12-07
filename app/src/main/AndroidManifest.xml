@@ -13,6 +13,13 @@
         android:theme="@style/Theme.Taskmaster"
         tools:targetApi="31">
         <activity
+            android:name=".AddTask"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".activities.Settings"
             android:exported="false">
             <meta-data
@@ -28,6 +35,13 @@
         </activity>
         <activity
             android:name=".activities.TaskDetails"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.AddTask"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -50,5 +64,6 @@
             android:name=".activities.AllTasks"
             android:exported="false" />
     </application>
+
 
 </manifest>

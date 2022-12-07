@@ -1,7 +1,7 @@
 package com.armasconi.taskmaster.activities;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -16,10 +16,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.armasconi.taskmaster.R;
+import com.armasconi.taskmaster.database.TaskMasterDatabase;
 
 
 public class MainActivity extends AppCompatActivity {
-    public static final String TASK_NAME = "DUDE";
+    // TODO Step: 5-1 Initialize the DATABASE
+    TaskMasterDatabase taskMasterDatabase;
+    public static final String DATABASE_NAME = "task_master_db";
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) { //menu display
@@ -27,11 +31,12 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.menu, menu);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) { //menu func
         switch (item.getItemId()) {
             case R.id.menuSettingsItem:
-                Intent i = new Intent(this,Settings.class);
+                Intent i = new Intent(this, Settings.class);
                 this.startActivity(i);
                 return true;
             default:
@@ -41,29 +46,37 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // TODO Step: 5-2 call the Room.databaseBuilder()
+        taskMasterDatabase = Room.databaseBuilder(
+                        getApplicationContext(),
+                        TaskMasterDatabase.class,
+                        DATABASE_NAME)
+                .fallbackToDestructiveMigration() // If Room gets confused, it tosses your database; don't use this in production!
+                .allowMainThreadQueries()
+                .build();
 
-        Button submitBtn = MainActivity.this.findViewById(R.id.btnAdd);     //1. get an UI element by id
+        taskMasterDatabase.tasksDao().findAll(); // to test and make sure our database works, even though we're not using the return value (yet)
 
-        submitBtn.setOnClickListener(view -> {                              //2. event listener
-            Context context = getApplicationContext();
-            CharSequence text = "Submitted!";
-            int duration = Toast.LENGTH_SHORT;
 
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
-            //3. Callback fn()
+        //2. event listener
+//            Context context = getApplicationContext();
+//            CharSequence text = "Submitted!";
+//            int duration = Toast.LENGTH_SHORT;
+//
+//            Toast toast = Toast.makeText(context, text, duration);
+//            toast.show();
+        //3. Callback fn()
 //                Log.v("", "Very Verbose");
 //                Log.d("", "Debug");
 //                Log.i("", "Information");
 //                Log.w("", "Warning");
 //                Log.e("", "Error");
 //                Log.wtf("", "What a terrible failure");
-            TextView greeting = MainActivity.this.findViewById(R.id.btnAdd);
-        });
+//            TextView greeting = MainActivity.this.findViewById(R.id.btnAdd);
+
         setupBtns();
         setupGreeting();
 
@@ -82,12 +95,18 @@ public class MainActivity extends AppCompatActivity {
             Intent goToTasks = new Intent(this, MyTasksActivity.class);
             startActivity(goToTasks);
         });
-        //TODO: send extra
-        // set up the intent (Current context.this, class to go to Class.class)
+
+        Button submitBtn = findViewById(R.id.btnAdd);     //1. get an UI element by id
+
+        submitBtn.setOnClickListener(view -> {
+            Intent goToForm = new Intent(MainActivity.this, AddTask.class);
+            startActivity(goToForm);
+            //TODO: send extra
+            // set up the intent (Current context.this, class to go to Class.class)
 //        Intent goDisplayTask1 = new Intent(this, TaskDetails.class);
 //        btnDisplayTask1.setOnClickListener(view -> {
 //            goDisplayTask1.putExtra(TASK_NAME, btnDisplayTask1.getText().toString());
-        // launch the intent
+            // launch the intent
 //            startActivity(goDisplayTask1);
 //
 //        });
@@ -104,6 +123,6 @@ public class MainActivity extends AppCompatActivity {
 //        });
 //        // setting up routing logic with intents. Intents are the highway between activities
 
-
+        });
     }
 }

@@ -1,106 +1,110 @@
 [
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/xml_data_extraction_rules.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.armasconi.taskmaster.app-pngs-24:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/xml_backup_rules.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/drawable/ic_launcher_background.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/layout_activity_all_tasks.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/layout/activity_all_tasks.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/menu_menu.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/menu/menu.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/layout_activity_my_task.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/layout/activity_my_task.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/layout_activity_task_details.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/layout/activity_task_details.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/layout_fragment_task_display.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/layout/fragment_task_display.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/drawable_ic_baseline_ac_unit_24.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/drawable/ic_baseline_ac_unit_24.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/drawable_ic_baseline_ac_unit_24.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/drawable/ic_baseline_ac_unit_24.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/layout_activity_my_task.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/layout/activity_my_task.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/layout_activity_settings.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/layout/activity_settings.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/drawable_ic_baseline_surfing_24.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/drawable/ic_baseline_surfing_24.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/xml_backup_rules.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/xml/backup_rules.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/layout_activity_main.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/layout/activity_main.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/drawable_ic_baseline_surfing_24.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/drawable/ic_baseline_surfing_24.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/xml_data_extraction_rules.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/xml/data_extraction_rules.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.armasconi.taskmaster.app-pngs-27:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/layout_activity_settings.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/layout/activity_settings.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/layout_fragment_my_task.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/layout/fragment_my_task.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/layout_fragment_task_display.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/layout/fragment_task_display.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/layout_fragment_my_task.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/layout/fragment_my_task.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/layout_activity_task_details.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/layout/activity_task_details.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/menu_menu.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/menu/menu.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/layout_activity_main.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/layout/activity_main.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/layout_activity_add_task.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/layout/activity_add_task.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.armasconi.taskmaster.app-merged_res-29:/layout_activity_all_tasks.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-31:/layout/activity_all_tasks.xml"
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.armasconi.taskmaster.app-merged_res-32:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.armasconi.taskmaster.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
     }
 ]

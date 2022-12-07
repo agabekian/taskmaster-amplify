@@ -21,6 +21,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.Taskmaster" >
         <activity
+            android:name="com.armasconi.taskmaster.AddTask"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.armasconi.taskmaster.activities.Settings"
             android:exported="false" >
             <meta-data
@@ -42,6 +49,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name="com.armasconi.taskmaster.activities.AddTask"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.armasconi.taskmaster.activities.MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -56,6 +70,11 @@
         </activity>
         <activity
             android:name="com.armasconi.taskmaster.activities.AllTasks"
+            android:exported="false" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
             android:exported="false" />
 
         <provider

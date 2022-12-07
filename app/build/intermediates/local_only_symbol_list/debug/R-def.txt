@@ -13,6 +13,10 @@ drawable ic_baseline_ac_unit_24
 drawable ic_baseline_surfing_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+id AddATaskETName
+id AddTaskBody
+id AddTaskSaveBttn
+id AddTaskSpinnerState
 id MyTaskFrag
 id MyTaskFragTVName
 id MyTaskFragTVType
@@ -29,6 +33,7 @@ id taskStatusView
 id taskTextView
 id taskTextView2
 id textView
+layout activity_add_task
 layout activity_all_tasks
 layout activity_main
 layout activity_my_task

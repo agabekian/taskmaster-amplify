@@ -20,10 +20,11 @@ public class MyTask {
     private java.util.Date datePosted;
 
 
-    public MyTask(String title, String body, TaskStateEnum state) {
+    public MyTask(String title, String body, TaskStateEnum state, Date datePosted) {
         this.title = title;
         this.body = body;
         this.state = state;
+        this.datePosted = datePosted;
     }
 
     public MyTask() {

@@ -15,7 +15,7 @@ import java.util.List;
 @Dao // Think of this like a Spring JPA repository, but we have to implement more stuff ourselves
 public interface TasksDao {
   @Insert
-  public void insertTask(MyTask task);
+  public long insertTask(MyTask task);
 
   //find all
   @Query("SELECT * FROM MyTask")
@@ -26,8 +26,8 @@ public interface TasksDao {
   public MyTask findById(long id);
 
   // findAllByType
-  @Query("SELECT * FROM MyTask WHERE type = :type")
-  public List<MyTask> findAllByType(MyTask.TaskStatusEnum state);
+  @Query("SELECT * FROM MyTask WHERE state = :state")
+  public List<MyTask> findAllByState(MyTask.TaskStateEnum state);
 
   @Delete
   public void delete(MyTask task);
