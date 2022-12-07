@@ -39,9 +39,7 @@ public class MyTasksActivity extends AppCompatActivity {
                 .fallbackToDestructiveMigration() // If Room gets confused, it tosses your database; don't use this in production!
                 .allowMainThreadQueries()
                 .build();
-
         setupRecyclerView();
-
 }
 
     @Override
@@ -72,7 +70,6 @@ public class MyTasksActivity extends AppCompatActivity {
         // TODO Step 3-2: (In this activity and RecyclerViewAdapter) Hand in the Activity context
         TaskRecyclerViewAdapter adapter = new TaskRecyclerViewAdapter(tasks, this);
         taskRV.setAdapter(adapter);
-
 //    public void setupRecyclerView() {
 //        // TODO Step 2-2:  Make some hardcoded data items
 //        List<MyTask> allTasks = new ArrayList<>();

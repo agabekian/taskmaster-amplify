@@ -19,7 +19,6 @@ id AddTaskSaveBttn
 id AddTaskSpinnerState
 id MyTaskFrag
 id MyTaskFragTVName
-id MyTaskFragTVType
 id SuperPetRecyclerView
 id UserProfileETUsername
 id UserProfileSaveBttn
@@ -29,7 +28,6 @@ id editTextTextPersonName
 id frameLayout
 id menuSettingsItem
 id new_game
-id taskStatusView
 id taskTextView
 id taskTextView2
 id textView

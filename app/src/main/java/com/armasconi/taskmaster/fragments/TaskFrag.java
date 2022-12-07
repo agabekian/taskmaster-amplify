@@ -11,8 +11,6 @@ import android.view.ViewGroup;
 import com.armasconi.taskmaster.R;
 
 public class TaskFrag extends Fragment {
-
-
     public TaskFrag() {
     }
 

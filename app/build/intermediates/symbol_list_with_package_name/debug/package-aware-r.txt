@@ -2655,7 +2655,6 @@ id FUNCTION
 id META
 id MyTaskFrag
 id MyTaskFragTVName
-id MyTaskFragTVType
 id NO_DEBUG
 id SHIFT
 id SHOW_ALL
@@ -3080,7 +3079,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id taskStatusView
 id taskTextView
 id taskTextView2
 id text

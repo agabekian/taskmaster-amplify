@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
     TaskMasterDatabase taskMasterDatabase;
     public static final String DATABASE_NAME = "task_master_db";
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) { //menu display
         MenuInflater inflater = getMenuInflater();

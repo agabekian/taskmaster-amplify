@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_height="220dp"
     android:background="#ECEDED"
     tools:context=".fragments.TaskFrag">
 
@@ -14,7 +14,7 @@
       android:id="@+id/MyTaskFrag"
       android:layout_width="390dp"
       android:layout_height="32dp"
-      android:background="#A9A5AA"
+      android:background="#6F6B70"
       android:textSize="14sp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
@@ -36,31 +36,5 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
-
-  <TextView
-      android:id="@+id/MyTaskFragTVType"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginBottom="16dp"
-      android:text="body"
-      android:textColor="#5E5858"
-      android:textSize="16sp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.077"
-      app:layout_constraintStart_toStartOf="parent" />
-
-  <CheckBox
-      android:id="@+id/taskStatusView"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="32dp"
-
-      android:text="state"
-      android:textColor="#E1E1E1"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/MyTaskFrag"
-      app:layout_constraintVertical_bias="0.375" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

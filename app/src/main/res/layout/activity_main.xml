@@ -6,43 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".activities.MainActivity">
 
-<!--    <Button-->
-<!--        android:id="@+id/btnTask1"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="132dp"-->
-<!--        android:text="Exam"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.498"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnTask2"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="28dp"-->
-<!--        android:text="Learn French"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.498"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btnTask1" />-->
-
-
-<!--    <TextView-->
-<!--        android:id="@+id/MainTVTasksGreeting"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-
-<!--        android:textAppearance="@style/TextAppearance.AppCompat.Display1"-->
-<!--        android:textColor="@color/black"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.165"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.273" />-->
-
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="130dp"
@@ -71,7 +34,6 @@
         app:layout_constraintStart_toEndOf="@+id/btnAdd"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
-
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="318dp"
@@ -87,25 +49,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <!--    <Button-->
-<!--        android:id="@+id/btnTask3"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="40dp"-->
-<!--        android:text="Find Job"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.498"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btnTask2" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnMainActivity_Tasks"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Button"-->
-<!--        tools:layout_editor_absoluteX="170dp"-->
-<!--        tools:layout_editor_absoluteY="604dp" />-->
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
