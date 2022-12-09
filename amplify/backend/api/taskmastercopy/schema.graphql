@@ -1,0 +1,14 @@
+ type MyTask @model@auth (rules:[{allow:public}]) {
+ id:ID!
+ title:String!
+ body:String
+ state:TaskStateEnum
+ datePosted:AWSDateTime
+}
+
+  enum TaskStateEnum {
+        New
+        Completed
+        Pending
+        Aspire_To
+  }

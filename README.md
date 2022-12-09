@@ -20,3 +20,5 @@ Rooms. Adding task to database read/write functionality. Some cleanup.
 ![](screenshots/Screenshot_20221205_141950.png)
 ![2](screenshots/DEC1.2.png)
 
+#### 12.07.22 v 0.14
+* rewired the app for amplify

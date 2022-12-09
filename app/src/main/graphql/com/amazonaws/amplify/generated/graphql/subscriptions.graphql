@@ -1,0 +1,34 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateMyTask($filter: ModelSubscriptionMyTaskFilterInput) {
+  onCreateMyTask(filter: $filter) {
+    id
+    title
+    body
+    state
+    datePosted
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateMyTask($filter: ModelSubscriptionMyTaskFilterInput) {
+  onUpdateMyTask(filter: $filter) {
+    id
+    title
+    body
+    state
+    datePosted
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteMyTask($filter: ModelSubscriptionMyTaskFilterInput) {
+  onDeleteMyTask(filter: $filter) {
+    id
+    title
+    body
+    state
+    datePosted
+    createdAt
+    updatedAt
+  }
+}

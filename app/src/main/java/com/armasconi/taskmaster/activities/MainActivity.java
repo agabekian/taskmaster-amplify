@@ -1,7 +1,7 @@
 package com.armasconi.taskmaster.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
+//import androidx.room.Room;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -16,14 +16,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.armasconi.taskmaster.R;
-import com.armasconi.taskmaster.database.TaskMasterDatabase;
+//import com.armasconi.taskmaster.database.TaskMasterDatabase;
 
 
 public class MainActivity extends AppCompatActivity {
-    // TODO Step: 5-1 Initialize the DATABASE
-    TaskMasterDatabase taskMasterDatabase;
-    public static final String DATABASE_NAME = "task_master_db";
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) { //menu display
         MenuInflater inflater = getMenuInflater();
@@ -49,15 +45,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // TODO Step: 5-2 call the Room.databaseBuilder()
-        taskMasterDatabase = Room.databaseBuilder(
-                        getApplicationContext(),
-                        TaskMasterDatabase.class,
-                        DATABASE_NAME)
-                .fallbackToDestructiveMigration() // If Room gets confused, it tosses your database; don't use this in production!
-                .allowMainThreadQueries()
-                .build();
-
-        taskMasterDatabase.tasksDao().findAll(); // to test and make sure our database works, even though we're not using the return value (yet)
+//        taskMasterDatabase = Room.databaseBuilder(
+//                        getApplicationContext(),
+//                        TaskMasterDatabase.class,
+//                        DATABASE_NAME)
+//                .fallbackToDestructiveMigration() // If Room gets confused, it tosses your database; don't use this in production!
+//                .allowMainThreadQueries()
+//                .build();
+//
+//        taskMasterDatabase.tasksDao().findAll(); // to test and make sure our database works, even though we're not using the return value (yet)
 
 
         //2. event listener
