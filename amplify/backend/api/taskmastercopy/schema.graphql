@@ -1,9 +1,20 @@
+
+ # TODO Step: 1-1 Create a new Model class -> User with One-to-many to MyTask
+ type Team @model @auth(rules: [{allow: public}]){
+   id: ID!
+   name: String!
+   teamTasks: [MyTask] @hasMany(indexName: "byTeams", fields: ["id"])
+ }
+
  type MyTask @model@auth (rules:[{allow:public}]) {
  id:ID!
+
  title:String!
+ TeamId: ID! @index(name:"byTeams", sortKeyFields:["title"])
  body:String
  state:TaskStateEnum
  datePosted:AWSDateTime
+ team: Team @belongsTo(fields: ["TeamId"])
 }
 
   enum TaskStateEnum {
