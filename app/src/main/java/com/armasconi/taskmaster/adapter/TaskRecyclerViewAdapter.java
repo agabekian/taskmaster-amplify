@@ -39,7 +39,8 @@ public class TaskRecyclerViewAdapter extends androidx.recyclerview.widget.Recycl
         // TODO Step 1-9: (In RecyclerViewAdapter.onCreateViewHolder()) Attach Fragment to ViewHolder
         return new MyTaskViewHolder(myTaskTextViewName);
     }
-//    @Override
+
+    //    @Override
 //    public void onBindViewHolder(@NonNull MyTaskViewHolder holder, int position) {
 //        // TODO Step 2-4: (In RecyclerViewAdapter.onBindViewHolder()) Bind data items to Fragments inside of ViewHolders
 //        TextView taskFragmentTextViewName = holder.itemView.findViewById(R.id.MyTaskFragTVName);
@@ -64,10 +65,10 @@ public class TaskRecyclerViewAdapter extends androidx.recyclerview.widget.Recycl
         TextView taskFragTVState = holder.itemView.findViewById(R.id.MyTaskFragTVState);
         TextView taskFragTVBody = holder.itemView.findViewById(R.id.MyTaskFragTVBody);
         MyTask task = allTasks.get(position);
-        taskFragTVDate.setText("on "+task.getDatePosted());
+        taskFragTVDate.setText("on " + task.getCreatedAt());
         taskFragTVBody.setText(task.getBody());
-        taskFragTVState.setText(""+task.getState());
-        taskFragTVName.setText((position+1) + ". " + task.getTitle());
+        taskFragTVState.setText("" + task.getState());
+        taskFragTVName.setText((position + 1) + ". " + task.getTitle());
 
         // TODO Step 3-3: (In RecyclerViewAdapter.onBindViewHolder()) Create OnClickListener, make an Intent inside it, and call this Intent with an Extra to go to another Activity
         View myTaskViewHolder = holder.itemView;

@@ -80,7 +80,8 @@ public class MainActivity extends AppCompatActivity {
     public void setupGreeting() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         String username = preferences.getString(Settings.USERNAME_TAG, "No username");
-//        ((TextView) findViewById(R.id.MainTVTasksGreeting)).setText(username + "'s Tasks"); v//Main title
+        String teamname = preferences.getString(Settings.TEAMNAME_TAG, "No username");
+        ((TextView) findViewById(R.id.editTextTextPersonName)).setText(username +" ("+ teamname +")"+ " Tasks"); //Main title
     }
 
     public void setupBtns() {

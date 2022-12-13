@@ -42,4 +42,5 @@ dependencies {
     implementation 'com.amplifyframework:aws-datastore:2.0.0'
     implementation "androidx.lifecycle:lifecycle-viewmodel:2.5.1"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
+    implementation 'com.amplifyframework:core:1.36.0'
 }

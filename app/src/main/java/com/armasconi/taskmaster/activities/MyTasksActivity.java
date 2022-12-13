@@ -1,6 +1,8 @@
 package com.armasconi.taskmaster.activities;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.MenuItem;
 
@@ -26,6 +28,9 @@ public class MyTasksActivity extends AppCompatActivity {
     public static final Boolean MY_TASK_STATE = false;
     TaskRecyclerViewAdapter adapter;
     private List<MyTask> allTasks;
+
+//    SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+//    String teamname = preferences.getString(Settings.TEAMNAME_TAG, "No username");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,14 +60,18 @@ public class MyTasksActivity extends AppCompatActivity {
     }
 
     public void setupRecyclerView() {
-
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String teamname = preferences.getString(Settings.TEAMNAME_TAG, "No username");
         allTasks = new ArrayList<>();
         Amplify.API.query(
                 ModelQuery.list(MyTask.class),
                 success -> {
                     Log.i(TAG, "Read tasks successfully");
                     for (MyTask databaseTask : success.getData()) {
-                        allTasks.add(databaseTask);
+                        if(databaseTask.getTeam().getName().equals(teamname)){
+                            allTasks.add(databaseTask);
+                        }
+
                     }
                     runOnUiThread(() -> adapter.notifyDataSetChanged()); // since this runs asynchronously, the adapter may already have rendered, so we have to tell it to update
                 },
