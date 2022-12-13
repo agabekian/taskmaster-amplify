@@ -12,6 +12,10 @@
         "source": "/Users/armasconi/.gradle/daemon/7.4/com.armasconi.taskmaster.app-main-42:/layout/fragment_my_task.xml"
     },
     {
+        "merged": "com.armasconi.taskmaster.app-merged_res-40:/layout_fragment_my_task.xml.flat",
+        "source": "com.armasconi.taskmaster.app-main-42:/layout/fragment_my_task.xml"
+    },
+    {
         "merged": "/Users/armasconi/.gradle/daemon/7.4/com.armasconi.taskmaster.app-merged_res-40:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/armasconi/.gradle/daemon/7.4/com.armasconi.taskmaster.app-main-42:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
@@ -30,10 +34,6 @@
     {
         "merged": "/Users/armasconi/.gradle/daemon/7.4/com.armasconi.taskmaster.app-merged_res-40:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/Users/armasconi/.gradle/daemon/7.4/com.armasconi.taskmaster.app-main-42:/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
-        "merged": "com.armasconi.taskmaster.app-merged_res-40:/layout_activity_add_task.xml.flat",
-        "source": "com.armasconi.taskmaster.app-main-42:/layout/activity_add_task.xml"
     },
     {
         "merged": "/Users/armasconi/.gradle/daemon/7.4/com.armasconi.taskmaster.app-merged_res-40:/mipmap-xxxhdpi_ic_launcher.webp.flat",

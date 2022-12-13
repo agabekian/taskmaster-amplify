@@ -5,7 +5,7 @@
 //
 //import java.util.Date;
 //
-//// TODO Step: 4-6 Create database converters for the date!
+////// TODO Step: 4-6 Create database converters for the date!
 //public class TaskMasterDatabaseConverters {
 //    @TypeConverter
 //    public static Date fromTimeStamp(Long dateValue) {

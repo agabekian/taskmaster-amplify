@@ -52,7 +52,7 @@
       android:text="title"
       android:textAppearance="@style/TextAppearance.AppCompat.Large"
       android:textColor="#716C6C"
-      android:textSize="20sp"
+      android:textSize="24sp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.466"
       app:layout_constraintHorizontal_chainStyle="spread"

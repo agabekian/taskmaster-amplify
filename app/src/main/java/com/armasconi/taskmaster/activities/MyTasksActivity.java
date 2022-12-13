@@ -68,7 +68,7 @@ public class MyTasksActivity extends AppCompatActivity {
                 success -> {
                     Log.i(TAG, "Read tasks successfully");
                     for (MyTask databaseTask : success.getData()) {
-                        if(databaseTask.getTeam().getName().equals(teamname)){  //filter by TEAM
+                        if(databaseTask.getTeam().getName().equals(teamname)){
                             allTasks.add(databaseTask);
                         }
 
