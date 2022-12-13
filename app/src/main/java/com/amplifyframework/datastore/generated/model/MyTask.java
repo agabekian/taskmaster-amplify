@@ -1,6 +1,7 @@
 package com.amplifyframework.datastore.generated.model;
 
 import com.amplifyframework.core.model.temporal.Temporal;
+import com.amplifyframework.core.model.annotations.BelongsTo;
 
 import java.util.List;
 import java.util.UUID;
@@ -24,17 +25,20 @@ import static com.amplifyframework.core.model.query.predicate.QueryField.field;
 @ModelConfig(pluralName = "MyTasks", type = Model.Type.USER, version = 1, authRules = {
   @AuthRule(allow = AuthStrategy.PUBLIC, operations = { ModelOperation.CREATE, ModelOperation.UPDATE, ModelOperation.DELETE, ModelOperation.READ })
 })
+@Index(name = "byTeams", fields = {"TeamId","title"})
 public final class MyTask implements Model {
   public static final QueryField ID = field("MyTask", "id");
   public static final QueryField TITLE = field("MyTask", "title");
   public static final QueryField BODY = field("MyTask", "body");
   public static final QueryField STATE = field("MyTask", "state");
   public static final QueryField DATE_POSTED = field("MyTask", "datePosted");
+  public static final QueryField TEAM = field("MyTask", "TeamId");
   private final @ModelField(targetType="ID", isRequired = true) String id;
   private final @ModelField(targetType="String", isRequired = true) String title;
   private final @ModelField(targetType="String") String body;
   private final @ModelField(targetType="TaskStateEnum") TaskStateEnum state;
   private final @ModelField(targetType="AWSDateTime") Temporal.DateTime datePosted;
+  private final @ModelField(targetType="Team") @BelongsTo(targetName = "TeamId", targetNames = {"TeamId"}, type = Team.class) Team team;
   private @ModelField(targetType="AWSDateTime", isReadOnly = true) Temporal.DateTime createdAt;
   private @ModelField(targetType="AWSDateTime", isReadOnly = true) Temporal.DateTime updatedAt;
   public String resolveIdentifier() {
@@ -61,6 +65,10 @@ public final class MyTask implements Model {
       return datePosted;
   }
   
+  public Team getTeam() {
+      return team;
+  }
+  
   public Temporal.DateTime getCreatedAt() {
       return createdAt;
   }
@@ -69,12 +77,13 @@ public final class MyTask implements Model {
       return updatedAt;
   }
   
-  private MyTask(String id, String title, String body, TaskStateEnum state, Temporal.DateTime datePosted) {
+  private MyTask(String id, String title, String body, TaskStateEnum state, Temporal.DateTime datePosted, Team team) {
     this.id = id;
     this.title = title;
     this.body = body;
     this.state = state;
     this.datePosted = datePosted;
+    this.team = team;
   }
   
   @Override
@@ -90,6 +99,7 @@ public final class MyTask implements Model {
               ObjectsCompat.equals(getBody(), myTask.getBody()) &&
               ObjectsCompat.equals(getState(), myTask.getState()) &&
               ObjectsCompat.equals(getDatePosted(), myTask.getDatePosted()) &&
+              ObjectsCompat.equals(getTeam(), myTask.getTeam()) &&
               ObjectsCompat.equals(getCreatedAt(), myTask.getCreatedAt()) &&
               ObjectsCompat.equals(getUpdatedAt(), myTask.getUpdatedAt());
       }
@@ -103,6 +113,7 @@ public final class MyTask implements Model {
       .append(getBody())
       .append(getState())
       .append(getDatePosted())
+      .append(getTeam())
       .append(getCreatedAt())
       .append(getUpdatedAt())
       .toString()
@@ -118,6 +129,7 @@ public final class MyTask implements Model {
       .append("body=" + String.valueOf(getBody()) + ", ")
       .append("state=" + String.valueOf(getState()) + ", ")
       .append("datePosted=" + String.valueOf(getDatePosted()) + ", ")
+      .append("team=" + String.valueOf(getTeam()) + ", ")
       .append("createdAt=" + String.valueOf(getCreatedAt()) + ", ")
       .append("updatedAt=" + String.valueOf(getUpdatedAt()))
       .append("}")
@@ -142,6 +154,7 @@ public final class MyTask implements Model {
       null,
       null,
       null,
+      null,
       null
     );
   }
@@ -151,7 +164,8 @@ public final class MyTask implements Model {
       title,
       body,
       state,
-      datePosted);
+      datePosted,
+      team);
   }
   public interface TitleStep {
     BuildStep title(String title);
@@ -164,6 +178,7 @@ public final class MyTask implements Model {
     BuildStep body(String body);
     BuildStep state(TaskStateEnum state);
     BuildStep datePosted(Temporal.DateTime datePosted);
+    BuildStep team(Team team);
   }
   
 
@@ -173,6 +188,7 @@ public final class MyTask implements Model {
     private String body;
     private TaskStateEnum state;
     private Temporal.DateTime datePosted;
+    private Team team;
     @Override
      public MyTask build() {
         String id = this.id != null ? this.id : UUID.randomUUID().toString();
@@ -182,7 +198,8 @@ public final class MyTask implements Model {
           title,
           body,
           state,
-          datePosted);
+          datePosted,
+          team);
     }
     
     @Override
@@ -210,6 +227,12 @@ public final class MyTask implements Model {
         return this;
     }
     
+    @Override
+     public BuildStep team(Team team) {
+        this.team = team;
+        return this;
+    }
+    
     /**
      * @param id id
      * @return Current Builder instance, for fluent method chaining
@@ -222,12 +245,13 @@ public final class MyTask implements Model {
   
 
   public final class CopyOfBuilder extends Builder {
-    private CopyOfBuilder(String id, String title, String body, TaskStateEnum state, Temporal.DateTime datePosted) {
+    private CopyOfBuilder(String id, String title, String body, TaskStateEnum state, Temporal.DateTime datePosted, Team team) {
       super.id(id);
       super.title(title)
         .body(body)
         .state(state)
-        .datePosted(datePosted);
+        .datePosted(datePosted)
+        .team(team);
     }
     
     @Override
@@ -248,6 +272,11 @@ public final class MyTask implements Model {
     @Override
      public CopyOfBuilder datePosted(Temporal.DateTime datePosted) {
       return (CopyOfBuilder) super.datePosted(datePosted);
+    }
+    
+    @Override
+     public CopyOfBuilder team(Team team) {
+      return (CopyOfBuilder) super.team(team);
     }
   }
   

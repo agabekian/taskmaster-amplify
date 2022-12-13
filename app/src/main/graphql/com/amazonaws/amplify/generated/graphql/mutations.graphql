@@ -1,4 +1,76 @@
 # this is an auto generated file. This will be overwritten
+mutation CreateTeam(
+  $input: CreateTeamInput!
+  $condition: ModelTeamConditionInput
+) {
+  createTeam(input: $input, condition: $condition) {
+    id
+    name
+    teamTasks {
+      items {
+        id
+        title
+        TeamId
+        body
+        state
+        datePosted
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateTeam(
+  $input: UpdateTeamInput!
+  $condition: ModelTeamConditionInput
+) {
+  updateTeam(input: $input, condition: $condition) {
+    id
+    name
+    teamTasks {
+      items {
+        id
+        title
+        TeamId
+        body
+        state
+        datePosted
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteTeam(
+  $input: DeleteTeamInput!
+  $condition: ModelTeamConditionInput
+) {
+  deleteTeam(input: $input, condition: $condition) {
+    id
+    name
+    teamTasks {
+      items {
+        id
+        title
+        TeamId
+        body
+        state
+        datePosted
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
 mutation CreateMyTask(
   $input: CreateMyTaskInput!
   $condition: ModelMyTaskConditionInput
@@ -6,9 +78,19 @@ mutation CreateMyTask(
   createMyTask(input: $input, condition: $condition) {
     id
     title
+    TeamId
     body
     state
     datePosted
+    team {
+      id
+      name
+      teamTasks {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
     createdAt
     updatedAt
   }
@@ -20,9 +102,19 @@ mutation UpdateMyTask(
   updateMyTask(input: $input, condition: $condition) {
     id
     title
+    TeamId
     body
     state
     datePosted
+    team {
+      id
+      name
+      teamTasks {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
     createdAt
     updatedAt
   }
@@ -34,9 +126,19 @@ mutation DeleteMyTask(
   deleteMyTask(input: $input, condition: $condition) {
     id
     title
+    TeamId
     body
     state
     datePosted
+    team {
+      id
+      name
+      teamTasks {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
     createdAt
     updatedAt
   }

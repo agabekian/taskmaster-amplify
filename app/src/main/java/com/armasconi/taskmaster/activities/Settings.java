@@ -16,6 +16,7 @@ import com.armasconi.taskmaster.R;
 public class Settings extends AppCompatActivity {
     SharedPreferences preferences;
     public static final String USERNAME_TAG = "username";
+    public static final String TEAMNAME_TAG = "teamname";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,11 +50,13 @@ public class Settings extends AppCompatActivity {
         saveButton.setOnClickListener(v -> {
             //method 1 to get input as a string
             String usernameText = ((EditText) findViewById(R.id.UserProfileETUsername)).getText().toString();
+            String teamText = ((EditText) findViewById(R.id.UserProfileETTeam)).getText().toString();
             //method 2 to get input as a string
 //            EditText userPhoneNumber = findViewById(R.id.UserProfileETPhoneNumber);
 //            String userPNString = userPhoneNumber.getText().toString();
             // method 1
             preferenceEditor.putString(USERNAME_TAG, usernameText);
+            preferenceEditor.putString(TEAMNAME_TAG, teamText);
 
             preferenceEditor.apply(); // TODO: Nothing saves unless you do this, DONT FORGET!!
 

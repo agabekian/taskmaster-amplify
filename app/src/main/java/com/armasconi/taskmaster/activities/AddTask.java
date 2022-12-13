@@ -49,32 +49,32 @@ public class AddTask extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true); //back button
         actionBar.setHomeButtonEnabled(true);
         // Todo Step: 1-2 hardcode/add 3 teams to AWS db
-      Team newTeam1 = Team.builder()
-        .name("Team_A")
-        .build();
-      Team newTeam2 = Team.builder()
-        .name("Team_B")
-
-        .build();
-      Team newTeam3 = Team.builder()
-        .name("Team_C")
-
-        .build();
-      Amplify.API.mutate(
-        ModelMutation.create(newTeam1),
-        success -> {},
-        failure -> {}
-      );
-      Amplify.API.mutate(
-        ModelMutation.create(newTeam2),
-        success -> {},
-        failure -> {}
-      );
-      Amplify.API.mutate(
-        ModelMutation.create(newTeam3),
-        success -> {},
-        failure -> {}
-      );
+//      Team newTeam1 = Team.builder()
+//        .name("Team_A")
+//        .build();
+//      Team newTeam2 = Team.builder()
+//        .name("Team_B")
+//
+//        .build();
+//      Team newTeam3 = Team.builder()
+//        .name("Team_C")
+//
+//        .build();
+//      Amplify.API.mutate(
+//        ModelMutation.create(newTeam1),
+//        success -> {},
+//        failure -> {}
+//      );
+//      Amplify.API.mutate(
+//        ModelMutation.create(newTeam2),
+//        success -> {},
+//        failure -> {}
+//      );
+//      Amplify.API.mutate(
+//        ModelMutation.create(newTeam3),
+//        success -> {},
+//        failure -> {}
+//      );
 
         // Todo Step: 1-3 setup team spinner
         teamSpinner = findViewById(R.id.AddATeamSpinner);
@@ -149,6 +149,7 @@ public class AddTask extends AppCompatActivity {
                     .title(((EditText) findViewById(R.id.AddATaskETName)).getText().toString())
                     .body(((EditText) findViewById(R.id.AddTaskBody)).getText().toString())
                     .state((TaskStateEnum) taskStateSpinner.getSelectedItem())
+                    .team(selectedTeam)
                     .datePosted(new Temporal.DateTime(new Date(), 0))
                     .build();
 

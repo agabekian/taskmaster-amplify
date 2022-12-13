@@ -15,6 +15,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable rounded_corner
 id AddATaskETName
+id AddATeamSpinner
 id AddTaskBody
 id AddTaskSaveBttn
 id AddTaskSpinnerState
@@ -23,6 +24,7 @@ id MyTaskFragTVBody
 id MyTaskFragTVName
 id MyTaskFragTVState
 id SuperPetRecyclerView
+id UserProfileETTeam
 id UserProfileETUsername
 id UserProfileSaveBttn
 id btnAdd

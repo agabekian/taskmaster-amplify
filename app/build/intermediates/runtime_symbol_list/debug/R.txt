@@ -2688,6 +2688,7 @@ int drawable tooltip_frame_dark 0x7f0700d4
 int drawable tooltip_frame_light 0x7f0700d5
 int id ALT 0x7f080000
 int id AddATaskETName 0x7f080001
+int id AddATeamSpinner 0x7f080222
 int id AddTaskBody 0x7f080002
 int id AddTaskSaveBttn 0x7f080003
 int id AddTaskSpinnerState 0x7f080004
@@ -2709,6 +2710,7 @@ int id SYM 0x7f080013
 int id SuperPetRecyclerView 0x7f080014
 int id TOP_END 0x7f080015
 int id TOP_START 0x7f080016
+int id UserProfileETTeam 0x7f080223
 int id UserProfileETUsername 0x7f080017
 int id UserProfileSaveBttn 0x7f080018
 int id accelerate 0x7f080019
