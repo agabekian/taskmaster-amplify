@@ -1,6 +1,8 @@
-# TaskMaster
+# Task Meister
 
-#### Todo app
+#### Todo app #9999999999999999 (Android)
+
+
 
 ```12.01.2022 v.0.10a ```
 * basic layout
@@ -11,12 +13,21 @@
 * Settings: Username can be stored via shared prefs for later retrieval within and without the app.
 
 ```12.05.22 v 0.12```
-
-Recycler view implemented.Some styling. 
+* Recycler view implemented
+* Some styling.
 
 ```12.06.22 v 0.13```
+* Rooms.
+*  Adding task to database read/write functionality
 
-Rooms. Adding task to database read/write functionality. Some cleanup.
+* Winterized the styling.
+* Basic Espresso test.
+
+
+
+
+Odd bug - running Espresso test will wipe out data in
+virtual phone's database
 
 ```12.07.22 v 0.14```
 * rewired the app for amplify
@@ -30,3 +41,6 @@ Rooms. Adding task to database read/write functionality. Some cleanup.
 Todo: fix time display in Tasks page.
 
 
+![](screenshots/tasks.png)
+![](screenshots/Screenshot_20221212_165216.png)
+![](screenshots/Screenshot_20221212_185217.png)
