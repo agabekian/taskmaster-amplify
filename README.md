@@ -40,7 +40,14 @@ virtual phone's database
 
 Todo: fix time display in Tasks page.
 
-
+```12.22.13```
+* Added login/signin/signup functionality
+* User Profile
 ![](screenshots/tasks.png)
 ![](screenshots/Screenshot_20221212_165216.png)
 ![](screenshots/Screenshot_20221212_185217.png)
+![](screenshots/login.png)
+![](screenshots/signin.png)
+
+amplify add storage
+create/update, read, delete
