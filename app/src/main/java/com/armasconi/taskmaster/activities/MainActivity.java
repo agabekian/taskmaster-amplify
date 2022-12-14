@@ -8,18 +8,31 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.content.Intent;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.amplifyframework.auth.AuthUser;
+import com.amplifyframework.auth.AuthUserAttributeKey;
+import com.amplifyframework.auth.options.AuthSignUpOptions;
+import com.amplifyframework.core.Amplify;
 import com.armasconi.taskmaster.R;
-//import com.armasconi.taskmaster.database.TaskMasterDatabase;
+import com.armasconi.taskmaster.activities.auth.SignIn_Activity;
+import com.armasconi.taskmaster.activities.auth.SignUp_Activity;
+import com.armasconi.taskmaster.activities.auth.VerifySignUp_Activity;
 
 
 public class MainActivity extends AppCompatActivity {
+    public final String TAG = "main_activity";
+    public final static String SIGNUP_EMAIL_TAG = "email";
+    public AuthUser authUser = null;
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) { //menu display
         MenuInflater inflater = getMenuInflater();
@@ -34,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(this, Settings.class);
                 this.startActivity(i);
                 return true;
+            case R.id.menuSignInItem:
+                Intent j = new Intent(this, SignIn_Activity.class);
+                this.startActivity(j);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -43,45 +60,55 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        authUser = Amplify.Auth.getCurrentUser();
+        //TODO 2-1 Hardcode signup, verify and login
 
-        // TODO Step: 5-2 call the Room.databaseBuilder()
-//        taskMasterDatabase = Room.databaseBuilder(
-//                        getApplicationContext(),
-//                        TaskMasterDatabase.class,
-//                        DATABASE_NAME)
-//                .fallbackToDestructiveMigration() // If Room gets confused, it tosses your database; don't use this in production!
-//                .allowMainThreadQueries()
-//                .build();
+
+        // Verfication
+//      Amplify.Auth.confirmSignUp(
+//        "alex.white@codefellows.com",
+//        "578232",
+//        success -> Log.i(TAG, "verify suceeded"),
+//        failure -> Log.i(TAG, "verification failed: " + failure)
+//      );
 //
-//        taskMasterDatabase.tasksDao().findAll(); // to test and make sure our database works, even though we're not using the return value (yet)
-
-
-        //2. event listener
-//            Context context = getApplicationContext();
-//            CharSequence text = "Submitted!";
-//            int duration = Toast.LENGTH_SHORT;
+//    //Login
 //
-//            Toast toast = Toast.makeText(context, text, duration);
-//            toast.show();
-        //3. Callback fn()
-//                Log.v("", "Very Verbose");
-//                Log.d("", "Debug");
-//                Log.i("", "Information");
-//                Log.w("", "Warning");
-//                Log.e("", "Error");
-//                Log.wtf("", "What a terrible failure");
-//            TextView greeting = MainActivity.this.findViewById(R.id.btnAdd);
+//    Amplify.Auth.signIn(
+//      "alex.white@codefellows.com",
+//      "p@ssw0rd",
+//      success -> Log.i(TAG, "SignIn success!"),
+//      failure -> Log.e(TAG, "SignIn failed")
+//    );
 
+        // Signout -> logout
+//      Amplify.Auth.signOut(
+//        () ->
+//        {
+//          Log.i(TAG, "Logout succeeded!");
+//        },
+//        failure ->
+//        {
+//          Log.i(TAG, "Logout failed: " + failure);
+//        }
+//      );
         setupBtns();
         setupGreeting();
-
     }
 
     public void setupGreeting() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         String username = preferences.getString(Settings.USERNAME_TAG, "No username");
         String teamname = preferences.getString(Settings.TEAMNAME_TAG, "No username");
-        ((TextView) findViewById(R.id.editTextTextPersonName)).setText(username +" ("+ teamname +")"+ " Tasks"); //Main title
+        ((TextView) findViewById(R.id.editTextTextPersonName)).setText(username + " (" + teamname + ")" + " Tasks"); //Main title
+    }
+
+    public void setupUserProfileImageButton() {
+        ImageView userProfileLink = MainActivity.this.findViewById(R.id.MainActivityImageViewUserProfile);
+        userProfileLink.setOnClickListener(v -> {
+            Intent goToUserProfile = new Intent(this, UserProfileActivity.class);
+            startActivity(goToUserProfile);
+        });
     }
 
     public void setupBtns() {
@@ -93,6 +120,76 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button submitBtn = findViewById(R.id.btnAdd);     //1. get an UI element by id
+        // Sign in button
+        Button signIn = findViewById(R.id.MainActivitySignInBttn);
+        signIn.setOnClickListener(view -> {
+            Intent goToSignIn = new Intent(this, SignIn_Activity.class);
+            startActivity(goToSignIn);
+        });
+
+//        Button signOutBtn = findViewById(R.id.switch1);
+//        signOutBtn.setOnClickListener(v -> {
+//                    Amplify.Auth.signOut(
+//                            () ->
+//                            {
+//                                Log.i(TAG, "Logout succeeded!");
+//                            },
+//                            failure ->
+//                            {
+//                                Log.i(TAG, "Logout failed: " + failure);
+//                            }
+//                    );
+//                }
+//        );
+        Button verify = findViewById(R.id.MainActivityVerifyBttn);
+        verify.setOnClickListener(view -> {
+                    Intent goVerify = new Intent(MainActivity.this, VerifySignUp_Activity.class);
+                    goVerify.putExtra(SIGNUP_EMAIL_TAG, "2008nv@gmail.com");
+                    startActivity(goVerify);
+                }
+        );
+        // sign up button
+        Button signUp = findViewById(R.id.MainActivitySignUpBttn);
+        signUp.setOnClickListener(v -> {
+            Intent goToSignUp = new Intent(this, SignUp_Activity.class);
+            startActivity(goToSignUp);
+        });
+        ImageView UserProfile = findViewById(R.id.MainActivityImageViewUserProfile);
+        UserProfile.setOnClickListener(v -> {
+                    Intent goToUserProfile = new Intent(this, UserProfileActivity.class);
+                    startActivity(goToUserProfile);
+                }
+        );
+//        signUp.setOnClickListener(v -> {
+//            Amplify.Auth.signUp("2008nv@gmail.com",
+//                    "p@ssw0rd",  // Cognito's default password policy is 8 characters, no other requirements
+//                    AuthSignUpOptions.builder()
+//                            .userAttribute(AuthUserAttributeKey.email(), "2008nv@gmail.com")
+//                            .build(),
+//                    success -> {
+//                        Log.i(TAG, "Signup suceeded" + success);
+//                    },
+//                    failure -> {
+//                        Log.w(TAG, "Signup dailed with email: " + "2008nv@gmail.com" + "with the message: " + failure);
+//                    }
+//            );
+//            Toast.makeText(this,"works",Toast.LENGTH_SHORT).show();
+//        });
+
+        // get current authenticted user
+        // if user is null -> show signUp button, hide signIn button
+        if (authUser == null) {
+            // not signed in: see sign up sign in hide logout
+            signIn.setVisibility(View.VISIBLE);
+            signUp.setVisibility(View.VISIBLE);
+        } else {
+            String username = authUser.getUsername();
+            Log.i(TAG, "Username is: " + username);
+            // signed in. hhide sign up and sign in and show logout
+            signIn.setVisibility(View.INVISIBLE);
+            signUp.setVisibility(View.INVISIBLE);
+
+        }
 
         submitBtn.setOnClickListener(view -> {
             Intent goToForm = new Intent(MainActivity.this, AddTask.class);
