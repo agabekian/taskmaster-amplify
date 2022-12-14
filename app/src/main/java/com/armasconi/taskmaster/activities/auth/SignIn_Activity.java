@@ -30,7 +30,7 @@ public class SignIn_Activity extends AppCompatActivity {
         setUpSignInForm();
     }
     @Override
-    //actial back button functionality as per AI
+    //actual back button functionality as per AI
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
