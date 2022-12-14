@@ -64,7 +64,7 @@ public class SignIn_Activity extends AppCompatActivity {
                         startActivity(goToProductListIntent);
                     },
                     failure -> {
-                        Log.i(TAG, "Login failed: " + failure);
+                        Log.i(TAG, "Login failed!: " + failure);
                         runOnUiThread(() -> Toast.makeText(this, "Sign In failed!", Toast.LENGTH_SHORT).show());
                     }
             );
