@@ -17,6 +17,9 @@
       },
       "auth": {
         "taskmastercopy529e5ba9": {}
+      },
+      "storage": {
+        "mystuff": {}
       }
     }
   }
