@@ -25,6 +25,7 @@ public class MyTasksActivity extends AppCompatActivity {
     public final static String TAG = "MyTaskActivity";
     public static final String MY_TASK_NAME = "taskTitle";
     public static final String MY_TASK_BODY = "taskDescription";
+
     public static final Boolean MY_TASK_STATE = false;
     TaskRecyclerViewAdapter adapter;
     private List<MyTask> allTasks;
@@ -45,10 +46,9 @@ public class MyTasksActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
     }
     @Override
-    //actual back button functionality as per AI
+    //back button functionality as per AI
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
@@ -68,18 +68,15 @@ public class MyTasksActivity extends AppCompatActivity {
                 success -> {
                     Log.i(TAG, "Read tasks successfully");
                     for (MyTask databaseTask : success.getData()) {
-                        if(databaseTask.getTeam().getName().equals(teamname)){
+                        if(databaseTask.getTeam().getName().equals(teamname)){ //display by team
                             allTasks.add(databaseTask);
                         }
-
                     }
                     runOnUiThread(() -> adapter.notifyDataSetChanged()); // since this runs asynchronously, the adapter may already have rendered, so we have to tell it to update
                 },
                 failure -> Log.e(TAG, "Failed to read TASKS from database")
         );
 //        allTasks.add(new MyTask("Learn French", "Merci Pardon",MyTask.TaskStateEnum.NEW, new Date() ));
-//        allTasks.add(new MyTask("Get in shape", "work work work", MyTask.TaskStateEnum.NEW, new Date()));
-//        allTasks.add(new MyTask("Get a billion", "Dollars or roubles?", MyTask.TaskStateEnum.COMPLETED, new Date()));
 
         RecyclerView taskRV = findViewById(R.id.SuperPetRecyclerView);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
