@@ -1,13 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-60:12
-INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-60:12
-INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-60:12
-INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-60:12
+ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-87:12
+INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-87:12
+INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-87:12
+INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-87:12
 MERGED from [com.amplifyframework:aws-api:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/85bc1b1d100a23eb5f5d0e4e297de5f8/transformed/aws-api-2.0.0/AndroidManifest.xml:16:1-26:12
 MERGED from [com.amplifyframework:aws-datastore:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/a5a9a37915406e440652900141875032/transformed/aws-datastore-2.0.0/AndroidManifest.xml:16:1-24:12
-MERGED from [com.amplifyframework:aws-api-appsync:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/e7174b1d593c33a1da8a7d6aef30e155/transformed/aws-api-appsync-2.0.0/AndroidManifest.xml:16:1-24:12
 MERGED from [com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:16:1-43:12
+MERGED from [com.amplifyframework:aws-api-appsync:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/e7174b1d593c33a1da8a7d6aef30e155/transformed/aws-api-appsync-2.0.0/AndroidManifest.xml:16:1-24:12
 MERGED from [com.amplifyframework:core:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/1a355f8567c5c4cedd946e8a0af1af97/transformed/core-2.0.0/AndroidManifest.xml:16:1-32:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.3.4] /Users/armasconi/.gradle/caches/transforms-3/e48def06a3326aaf02c2a348ffbdf0e6/transformed/navigation-ui-ktx-2.3.4/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.3.4] /Users/armasconi/.gradle/caches/transforms-3/86cc0bfc30c4f5c99c8ae20b266f57c9/transformed/navigation-ui-2.3.4/AndroidManifest.xml:17:1-24:12
@@ -42,11 +42,11 @@ MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/armasconi/.gradle/
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/armasconi/.gradle/caches/transforms-3/fe0fd5ae30eba395a4c7b39f593407e5/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/armasconi/.gradle/caches/transforms-3/1282e2a4b56306d4b655af35a574b455/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/armasconi/.gradle/caches/transforms-3/c51b904150fd2875fe24ebca6a6abd7f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.4.0] /Users/armasconi/.gradle/caches/transforms-3/d1182ac9010646c74e629f347fb2d565/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/1b2c2bc523e43a8695e5871c17c75f28/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/armasconi/.gradle/caches/transforms-3/0669cfa2680cb1a246f3cde1cbb2ad91/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/f9294253ceb16a4605b1f28d26267b69/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] /Users/armasconi/.gradle/caches/transforms-3/f7a3bfe395c1bb5d22925036631826ad/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.browser:browser:1.4.0] /Users/armasconi/.gradle/caches/transforms-3/d1182ac9010646c74e629f347fb2d565/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media:media:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/582a08d95629e1c5c09588cfdd338612/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/999ee538c6d29fb810ef4f70f13fd63c/transformed/transition-1.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/a33599820413b39306533ebcc3efaada/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -59,6 +59,7 @@ MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /Users/armasconi/.g
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/armasconi/.gradle/caches/transforms-3/890fbcef9c869e9a85209cc5c9a96739/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/6f4ff4c3a073b7e8647c5defcb426601/transformed/savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/fa3659a04c6e45d556b5f8662112b28b/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.security:security-crypto:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/a4cd9646d9e828f551a7845848dfa9ea/transformed/security-crypto-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/armasconi/.gradle/caches/transforms-3/ce2ffdaf6b82693a50f2f836056ec56a/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/36b41f1cb5ac05fa3d5523198ccb9ec5/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/armasconi/.gradle/caches/transforms-3/4acf5e1ffd3dd0501ffb513566a1fad9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
@@ -66,7 +67,6 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/armasconi/.grad
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /Users/armasconi/.gradle/caches/transforms-3/b4e5f290f34485d1a639559c80ff8fdd/transformed/lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/armasconi/.gradle/caches/transforms-3/502b310031e6b0050841c7128259ea17/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/armasconi/.gradle/caches/transforms-3/86cac07897472df51478ab51cbbaba04/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.security:security-crypto:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/a4cd9646d9e828f551a7845848dfa9ea/transformed/security-crypto-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/b72326ebc58ae513a4b2ca23b3b41f53/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/56a60aa11c00550ac2067dc311230fea/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/5c31521eb266c26ef211a1f53b56b07e/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -75,27 +75,27 @@ MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/armasconi
 MERGED from [io.reactivex.rxjava3:rxandroid:3.0.0] /Users/armasconi/.gradle/caches/transforms-3/e83049e4b90a3a862a1534890a2e0f16/transformed/rxandroid-3.0.0/AndroidManifest.xml:15:1-20:12
 MERGED from [androidx.multidex:multidex:2.0.1] /Users/armasconi/.gradle/caches/transforms-3/2a0781d7fb3637d35291e6ed8b784902/transformed/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:2:1-23:12
-INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-60:12
-INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-60:12
-INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-60:12
+INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-87:12
+INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-87:12
+INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-87:12
 	package
 		INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-60:12
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-87:12
 		INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-60:12
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-87:12
 		INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-60:12
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:1-87:12
 		INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:5:5-58:19
+ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:5:5-85:19
 MERGED from [com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:35:5-41:19
 MERGED from [com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:35:5-41:19
 MERGED from [com.amplifyframework:core:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/1a355f8567c5c4cedd946e8a0af1af97/transformed/core-2.0.0/AndroidManifest.xml:26:5-30:19
@@ -138,52 +138,76 @@ MERGED from [com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches
 		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:8:9-65
 	android:name
 		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:6:9-45
-activity#com.armasconi.taskmaster.activities.Settings
-ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:17:9-23:20
+activity#com.armasconi.taskmaster.activities.UserProfileActivity
+ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:16:9-22:20
 	android:exported
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:19:13-37
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:18:13-48
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:17:13-59
 meta-data#android.app.lib_name
-ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:20:13-22:36
+ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:19:13-21:36
 	android:value
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:17-33
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:21:17-33
 	android:name
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:21:17-52
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:20:17-52
+activity#com.armasconi.taskmaster.activities.auth.SignIn_Activity
+ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:23:9-29:20
+	android:exported
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:13-60
+activity#com.armasconi.taskmaster.activities.auth.SignUp_Activity
+ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:30:9-36:20
+	android:exported
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:31:13-60
+activity#com.armasconi.taskmaster.activities.auth.VerifySignUp_Activity
+ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:37:9-43:20
+	android:exported
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:38:13-66
+activity#com.armasconi.taskmaster.activities.Settings
+ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:44:9-50:20
+	android:exported
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:45:13-48
 activity#com.armasconi.taskmaster.activities.MyTasksActivity
-ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:9-30:20
+ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:51:9-57:20
 	android:exported
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:26:13-37
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:53:13-37
 	android:name
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:25:13-55
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:52:13-55
 activity#com.armasconi.taskmaster.activities.TaskDetails
-ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:31:9-37:20
+ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:58:9-64:20
 	android:exported
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:33:13-37
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:60:13-37
 	android:name
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:32:13-51
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:59:13-51
 activity#com.armasconi.taskmaster.activities.AddTask
-ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:38:9-44:20
+ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:65:9-71:20
 	android:exported
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:40:13-37
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:67:13-37
 	android:name
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:39:13-47
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:66:13-47
 activity#com.armasconi.taskmaster.activities.MainActivity
-ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:45:9-57:20
+ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:72:9-84:20
 	android:exported
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:47:13-36
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:74:13-36
 	android:name
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:46:13-52
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:73:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:48:13-52:29
+ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:75:13-79:29
 action#android.intent.action.MAIN
-ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:49:17-69
+ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:76:17-69
 	android:name
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:49:25-66
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:76:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:51:17-77
+ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:78:17-77
 	android:name
-		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:51:27-74
+		ADDED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:78:27-74
 uses-sdk
 INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml
@@ -192,10 +216,10 @@ MERGED from [com.amplifyframework:aws-api:2.0.0] /Users/armasconi/.gradle/caches
 MERGED from [com.amplifyframework:aws-api:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/85bc1b1d100a23eb5f5d0e4e297de5f8/transformed/aws-api-2.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.amplifyframework:aws-datastore:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/a5a9a37915406e440652900141875032/transformed/aws-datastore-2.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.amplifyframework:aws-datastore:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/a5a9a37915406e440652900141875032/transformed/aws-datastore-2.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.amplifyframework:aws-api-appsync:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/e7174b1d593c33a1da8a7d6aef30e155/transformed/aws-api-appsync-2.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.amplifyframework:aws-api-appsync:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/e7174b1d593c33a1da8a7d6aef30e155/transformed/aws-api-appsync-2.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.amplifyframework:aws-api-appsync:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/e7174b1d593c33a1da8a7d6aef30e155/transformed/aws-api-appsync-2.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.amplifyframework:aws-api-appsync:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/e7174b1d593c33a1da8a7d6aef30e155/transformed/aws-api-appsync-2.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.amplifyframework:core:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/1a355f8567c5c4cedd946e8a0af1af97/transformed/core-2.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.amplifyframework:core:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/1a355f8567c5c4cedd946e8a0af1af97/transformed/core-2.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui-ktx:2.3.4] /Users/armasconi/.gradle/caches/transforms-3/e48def06a3326aaf02c2a348ffbdf0e6/transformed/navigation-ui-ktx-2.3.4/AndroidManifest.xml:20:5-22:41
@@ -264,6 +288,8 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/armas
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/armasconi/.gradle/caches/transforms-3/1282e2a4b56306d4b655af35a574b455/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/armasconi/.gradle/caches/transforms-3/c51b904150fd2875fe24ebca6a6abd7f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/armasconi/.gradle/caches/transforms-3/c51b904150fd2875fe24ebca6a6abd7f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/armasconi/.gradle/caches/transforms-3/d1182ac9010646c74e629f347fb2d565/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/armasconi/.gradle/caches/transforms-3/d1182ac9010646c74e629f347fb2d565/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/1b2c2bc523e43a8695e5871c17c75f28/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/1b2c2bc523e43a8695e5871c17c75f28/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/armasconi/.gradle/caches/transforms-3/0669cfa2680cb1a246f3cde1cbb2ad91/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -272,8 +298,6 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/armascon
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/f9294253ceb16a4605b1f28d26267b69/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.1.0] /Users/armasconi/.gradle/caches/transforms-3/f7a3bfe395c1bb5d22925036631826ad/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] /Users/armasconi/.gradle/caches/transforms-3/f7a3bfe395c1bb5d22925036631826ad/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] /Users/armasconi/.gradle/caches/transforms-3/d1182ac9010646c74e629f347fb2d565/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] /Users/armasconi/.gradle/caches/transforms-3/d1182ac9010646c74e629f347fb2d565/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media:media:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/582a08d95629e1c5c09588cfdd338612/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/582a08d95629e1c5c09588cfdd338612/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/999ee538c6d29fb810ef4f70f13fd63c/transformed/transition-1.3.0/AndroidManifest.xml:20:5-22:41
@@ -298,6 +322,8 @@ MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/armasconi/.gradle/cach
 MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/6f4ff4c3a073b7e8647c5defcb426601/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/fa3659a04c6e45d556b5f8662112b28b/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/fa3659a04c6e45d556b5f8662112b28b/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.security:security-crypto:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/a4cd9646d9e828f551a7845848dfa9ea/transformed/security-crypto-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.security:security-crypto:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/a4cd9646d9e828f551a7845848dfa9ea/transformed/security-crypto-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/armasconi/.gradle/caches/transforms-3/ce2ffdaf6b82693a50f2f836056ec56a/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/armasconi/.gradle/caches/transforms-3/ce2ffdaf6b82693a50f2f836056ec56a/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/36b41f1cb5ac05fa3d5523198ccb9ec5/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
@@ -312,8 +338,6 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/armasconi/
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/armasconi/.gradle/caches/transforms-3/502b310031e6b0050841c7128259ea17/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/armasconi/.gradle/caches/transforms-3/86cac07897472df51478ab51cbbaba04/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/armasconi/.gradle/caches/transforms-3/86cac07897472df51478ab51cbbaba04/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.security:security-crypto:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/a4cd9646d9e828f551a7845848dfa9ea/transformed/security-crypto-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.security:security-crypto:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/a4cd9646d9e828f551a7845848dfa9ea/transformed/security-crypto-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/b72326ebc58ae513a4b2ca23b3b41f53/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/b72326ebc58ae513a4b2ca23b3b41f53/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/armasconi/.gradle/caches/transforms-3/56a60aa11c00550ac2067dc311230fea/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44

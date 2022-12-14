@@ -2698,6 +2698,10 @@ id BOTTOM_START
 id CTRL
 id FUNCTION
 id META
+id MainActivityImageViewUserProfile
+id MainActivitySignInBttn
+id MainActivitySignUpBttn
+id MainActivityVerifyBttn
 id MyTaskFrag
 id MyTaskFragTVBody
 id MyTaskFragTVName
@@ -2711,6 +2715,8 @@ id SYM
 id SuperPetRecyclerView
 id TOP_END
 id TOP_START
+id USerProfileEditTextAddress
+id UserProfileETPhoneNumber
 id UserProfileETTeam
 id UserProfileETUsername
 id UserProfileSaveBttn
@@ -2892,6 +2898,7 @@ id east
 id editTextTextPersonName
 id edit_query
 id elastic
+id emailBox
 id embed
 id end
 id endToStart
@@ -3002,6 +3009,7 @@ id material_value_index
 id matrix
 id media_actions
 id menuSettingsItem
+id menuSignInItem
 id message
 id middle
 id mini
@@ -3049,7 +3057,6 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
-id new_game
 id noScroll
 id noState
 id none
@@ -3128,6 +3135,12 @@ id show_device_info
 id show_env_info
 id show_file_issue
 id show_logs
+id signInBttnSignIn
+id signInETEmail
+id signInETPassword
+id signUpETEmail
+id signUpETPassword
+id signUpbttnSignUp
 id sin
 id skipCollapsed
 id skipped
@@ -3161,6 +3174,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id switch1
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3184,6 +3198,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView2
+id textView3
+id textView4
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3216,6 +3233,8 @@ id unlabeled
 id up
 id useLogo
 id verbose_logs
+id verifyBttnVerify
+id verifyETConfirmationCode
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3363,7 +3382,11 @@ layout activity_dev_menu
 layout activity_main
 layout activity_my_task
 layout activity_settings
+layout activity_sign_in
+layout activity_sign_up
 layout activity_task_details
+layout activity_user_profile
+layout activity_verify_sign_up
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3645,10 +3668,12 @@ string placeholder_env_info
 string placeholder_logs
 string progress
 string retry
+string save
 string search_logs_button_text
 string search_logs_hint
 string search_menu_title
 string settings
+string signin
 string status_bar_notification_info_overflow
 string task
 string verbose
