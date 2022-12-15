@@ -15,6 +15,7 @@
  state:TaskStateEnum
  datePosted:AWSDateTime
  team: Team @belongsTo(fields: ["TeamId"])
+ s3ImageKey: String
 }
 
   enum TaskStateEnum {

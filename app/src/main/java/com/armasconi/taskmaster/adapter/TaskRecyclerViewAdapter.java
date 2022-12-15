@@ -2,20 +2,25 @@ package com.armasconi.taskmaster.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.amplifyframework.core.Amplify;
 import com.amplifyframework.datastore.generated.model.MyTask;
 import com.armasconi.taskmaster.R;
 import com.armasconi.taskmaster.activities.MyTasksActivity;
 import com.armasconi.taskmaster.activities.TaskDetails;
 
 
+import java.io.File;
 import java.util.List;
 
 //TODO Step 1-4: Make a class whose sole purpose is to manage RecyclerViews: a RecyclerView.Adapter
@@ -64,16 +69,34 @@ public class TaskRecyclerViewAdapter extends androidx.recyclerview.widget.Recycl
         TextView taskFragTVDate = holder.itemView.findViewById(R.id.dateTag);
         TextView taskFragTVState = holder.itemView.findViewById(R.id.MyTaskFragTVState);
         TextView taskFragTVBody = holder.itemView.findViewById(R.id.MyTaskFragTVBody);
+        ImageView taskImage = holder.itemView.findViewById(R.id.SuperPetDeleteImage);
         MyTask task = allTasks.get(position);
+        String s3ImageKey = task.getS3ImageKey();
+
+//        if (s3ImageKey != null) {
+//
+//            Amplify.Storage.downloadFile(
+//
+//                    s3ImageKey,
+//                    new File(getApplication().getFilesDir(), s3ImageKey),
+//                    success -> {
+//                        taskImage.setImageBitmap(BitmapFactory.decodeFile(success.getFile().getPath()));
+//                    },
+//                    failure -> Log.i(TAG,"failed image acquisition")
+//            );
+//        }
+
         taskFragTVDate.setText("on " + task.getCreatedAt());
         taskFragTVBody.setText(task.getBody());
         taskFragTVState.setText("" + task.getState());
         taskFragTVName.setText((position + 1) + ". " + task.getTitle());
 
+
         // TODO Step 3-3: (In RecyclerViewAdapter.onBindViewHolder()) Create OnClickListener, make an Intent inside it, and call this Intent with an Extra to go to another Activity
         View myTaskViewHolder = holder.itemView;
         myTaskViewHolder.setOnClickListener(v -> {
             Intent goToAllTasks = new Intent(callingActivity, TaskDetails.class);
+            goToAllTasks.putExtra("s3ImageKey", s3ImageKey);
             callingActivity.startActivity(goToAllTasks);
         });
     }
