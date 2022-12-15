@@ -6,15 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".activities.AddTask">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/AddASuperPetBttnAddImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <ImageView
+        android:id="@+id/ADdAASuperPetImageViewImage"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="163dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <EditText
         android:id="@+id/AddATaskETName"
-        android:drawableRight="@drawable/ic_baseline_ac_unit_24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
         android:layout_marginTop="74dp"
         android:layout_marginEnd="100dp"
+        android:drawableRight="@drawable/ic_baseline_ac_unit_24"
         android:ems="10"
         android:hint="title"
         android:inputType="textPersonName"

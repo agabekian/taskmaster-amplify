@@ -42,11 +42,13 @@ public class MyTasksActivity extends AppCompatActivity {
         actionBar.setHomeButtonEnabled(true);
 
         setupRecyclerView();
-}
+    }
+
     @Override
     protected void onResume() {
         super.onResume();
     }
+
     @Override
     //back button functionality as per AI
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -68,7 +70,7 @@ public class MyTasksActivity extends AppCompatActivity {
                 success -> {
                     Log.i(TAG, "Read tasks successfully");
                     for (MyTask databaseTask : success.getData()) {
-                        if(databaseTask.getTeam().getName().equals(teamname)){ //display by team
+                        if (databaseTask.getTeam().getName().equals(teamname)) { //display by team
                             allTasks.add(databaseTask);
                         }
                     }
@@ -77,10 +79,10 @@ public class MyTasksActivity extends AppCompatActivity {
                 failure -> Log.e(TAG, "Failed to read TASKS from database")
         );
 //        allTasks.add(new MyTask("Learn French", "Merci Pardon",MyTask.TaskStateEnum.NEW, new Date() ));
-
         RecyclerView taskRV = findViewById(R.id.SuperPetRecyclerView);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         taskRV.setLayoutManager(layoutManager);
+
         adapter = new TaskRecyclerViewAdapter(allTasks, this);
         taskRV.setAdapter(adapter);
     }

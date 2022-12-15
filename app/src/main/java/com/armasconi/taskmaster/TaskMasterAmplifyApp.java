@@ -7,6 +7,7 @@ import com.amplifyframework.AmplifyException;
 import com.amplifyframework.api.aws.AWSApiPlugin;
 import com.amplifyframework.core.Amplify;
 import com.amplifyframework.auth.cognito.AWSCognitoAuthPlugin;
+import com.amplifyframework.storage.s3.AWSS3StoragePlugin;
 
 public class TaskMasterAmplifyApp extends Application {
     public final static String TAG = "time_master_amplify_app";
@@ -17,6 +18,7 @@ public class TaskMasterAmplifyApp extends Application {
         try {
             Amplify.addPlugin(new AWSApiPlugin());
             Amplify.addPlugin(new AWSCognitoAuthPlugin());
+            Amplify.addPlugin(new AWSS3StoragePlugin());
             Amplify.configure(getApplicationContext());
 
         } catch (AmplifyException ae) {

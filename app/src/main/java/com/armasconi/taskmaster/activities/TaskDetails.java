@@ -4,14 +4,20 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.CheckedTextView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.amplifyframework.core.Amplify;
 import com.armasconi.taskmaster.R;
 import com.armasconi.taskmaster.adapter.TaskRecyclerViewAdapter;
+
+import java.io.File;
 
 public class TaskDetails extends AppCompatActivity {
 
@@ -27,6 +33,7 @@ public class TaskDetails extends AppCompatActivity {
         actionBar.setHomeButtonEnabled(true);
         displayTaskName();
         displayTaskBody();
+        displayImage();
     }
 
 
@@ -69,6 +76,23 @@ public class TaskDetails extends AppCompatActivity {
             textBodyView.setText("No body");
         }
     }
+    public void displayImage() {
+        Intent callingIntent = getIntent();
+        String s3ImageKey = callingIntent.getStringExtra("s3ImageKey");
+                if (s3ImageKey != null) {
+            Amplify.Storage.downloadFile(
+                    s3ImageKey,
+                    new File(getApplication().getFilesDir(), s3ImageKey),
+                    success -> {
+                        ImageView displayImage = findViewById(R.id.displayImage);
+                        displayImage.setImageBitmap(BitmapFactory.decodeFile(success.getFile().getPath()));
+                    },
+                    failure -> Log.i("TaskDetail","failed image acquisition")
+            );
+        }
+
+    }
+
 
 //    public void displayTaskStatus() { //finish passing boolean
 //        Intent callingIntent = getIntent();

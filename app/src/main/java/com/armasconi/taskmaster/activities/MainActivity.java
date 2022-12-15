@@ -27,7 +27,6 @@ import com.armasconi.taskmaster.activities.auth.SignIn_Activity;
 import com.armasconi.taskmaster.activities.auth.SignUp_Activity;
 import com.armasconi.taskmaster.activities.auth.VerifySignUp_Activity;
 
-
 public class MainActivity extends AppCompatActivity {
     public final String TAG = "main_activity";
     public final static String SIGNUP_EMAIL_TAG = "email";
@@ -39,7 +38,34 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.menu, menu);
         return true;
     }
-
+    // TODO Step 3-1 Manual upload of a file to S3
+//    String testFilename = "testFileName";
+//    File testFile = new File(getApplicationContext().getFilesDir(), testFilename);
+//
+//    try
+//    {
+//      BufferedWriter testFileBufferedWriter = new BufferedWriter(new FileWriter(testFile));
+//      testFileBufferedWriter.append("Some test text here\nAnother line of test text");
+//      testFileBufferedWriter.close();  // Make sure to do this or the text may not be saved!
+//    } catch (IOException ioe)
+//    {
+//      Log.e(TAG, "Could not write file locally with filename: " + testFilename);
+//    }
+//
+//    String testFileS3Key = "someFileOnS3.txt";
+//
+//    Amplify.Storage.uploadFile(
+//      testFileS3Key,
+//      testFile,
+//      success ->
+//      {
+//        Log.i(TAG, "S3 upload succeeded! Key is: " + success.getKey());
+//      },
+//      failure ->
+//      {
+//        Log.i(TAG, "S3 upload failed! " + failure.getMessage());
+//      }
+//    );
     @Override
     public boolean onOptionsItemSelected(MenuItem item) { //menu func
         switch (item.getItemId()) {
@@ -60,7 +86,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        authUser = Amplify.Auth.getCurrentUser();
+
+        // TODO This is how you get the currentAuthUser
+        Amplify.Auth.getCurrentUser(
+                success -> {
+                    Log.i(TAG, "User is authorized OK");
+                    authUser = success;
+                },
+                failure -> {
+                    Log.w(TAG, "No authenticated User present");
+                }
+        );
+
         //TODO 2-1 Hardcode signup, verify and login
 
 
@@ -185,10 +222,9 @@ public class MainActivity extends AppCompatActivity {
         } else {
             String username = authUser.getUsername();
             Log.i(TAG, "Username is: " + username);
-            // signed in. hhide sign up and sign in and show logout
+            // signed in. hide sign up and sign in and show logout
             signIn.setVisibility(View.INVISIBLE);
             signUp.setVisibility(View.INVISIBLE);
-
         }
 
         submitBtn.setOnClickListener(view -> {

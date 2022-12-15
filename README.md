@@ -43,11 +43,18 @@ Todo: fix time display in Tasks page.
 ```12.22.13```
 * Added login/signin/signup functionality
 * User Profile
+* 
+```12.14.22```
+Added image upload and display functionality
 ![](screenshots/tasks.png)
 ![](screenshots/Screenshot_20221212_165216.png)
 ![](screenshots/Screenshot_20221212_185217.png)
 ![](screenshots/login.png)
 ![](screenshots/signin.png)
-
+![](screenshots/image.png)
 amplify add storage
 create/update, read, delete
+
+You can tell git to stop ignoring changes to the file with:
+```git update-index --no-assume-unchanged path/to/file
+```
