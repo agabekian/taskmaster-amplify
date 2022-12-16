@@ -1,10 +1,13 @@
 package com.armasconi.taskmaster.activities;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +20,7 @@ import com.amplifyframework.datastore.generated.model.MyTask;
 import com.armasconi.taskmaster.R;
 import com.armasconi.taskmaster.adapter.TaskRecyclerViewAdapter;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -32,7 +36,6 @@ public class MyTasksActivity extends AppCompatActivity {
 
 //    SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
 //    String teamname = preferences.getString(Settings.TEAMNAME_TAG, "No username");
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,13 +45,13 @@ public class MyTasksActivity extends AppCompatActivity {
         actionBar.setHomeButtonEnabled(true);
 
         setupRecyclerView();
+        displayImage();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
     }
-
     @Override
     //back button functionality as per AI
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -63,7 +66,7 @@ public class MyTasksActivity extends AppCompatActivity {
 
     public void setupRecyclerView() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        String teamname = preferences.getString(Settings.TEAMNAME_TAG, "No username");
+        String teamname = preferences.getString(UserProfileActivity.TEAMNAME_TAG, "No username");
         allTasks = new ArrayList<>();
         Amplify.API.query(
                 ModelQuery.list(MyTask.class),
@@ -86,4 +89,22 @@ public class MyTasksActivity extends AppCompatActivity {
         adapter = new TaskRecyclerViewAdapter(allTasks, this);
         taskRV.setAdapter(adapter);
     }
+    public void displayImage() {
+        Intent callingIntent = getIntent();
+        String s3ImageKey = callingIntent.getStringExtra("s3ImageKey");
+        if (s3ImageKey != null) {
+            String[] segments = s3ImageKey.split("/"); //key has "public" prefix for odd reason so gotta do this
+            s3ImageKey = segments[segments.length - 1];
+            Amplify.Storage.downloadFile(
+                    s3ImageKey,
+                    new File(getApplication().getFilesDir(), s3ImageKey),
+                    success -> {
+                        ImageView displayImage = findViewById(R.id.displayImage);
+                        displayImage.setImageBitmap(BitmapFactory.decodeFile(success.getFile().getPath()));
+                    },
+                    failure -> Log.i("TaskDetail", "failed image acquisition")
+            );
+        }
+    }
+
 }

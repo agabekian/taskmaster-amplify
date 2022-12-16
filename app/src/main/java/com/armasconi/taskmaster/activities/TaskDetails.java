@@ -48,11 +48,12 @@ public class TaskDetails extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
     public void displayTaskName() {
         Intent callingIntent = getIntent();
         String textStarter = null;
         if (callingIntent != null) {
-            textStarter = callingIntent.getStringExtra(MyTasksActivity.MY_TASK_NAME);
+            textStarter = task.ge;
         }
         TextView taskTextView = findViewById(R.id.taskTextView);
         if (textStarter != null) {
@@ -76,10 +77,13 @@ public class TaskDetails extends AppCompatActivity {
             textBodyView.setText("No body");
         }
     }
+
     public void displayImage() {
         Intent callingIntent = getIntent();
         String s3ImageKey = callingIntent.getStringExtra("s3ImageKey");
-                if (s3ImageKey != null) {
+        if (s3ImageKey != null) {
+            String[] segments = s3ImageKey.split("/"); //key has "public" prefix for odd reason so gotta do this
+            s3ImageKey = segments[segments.length - 1];
             Amplify.Storage.downloadFile(
                     s3ImageKey,
                     new File(getApplication().getFilesDir(), s3ImageKey),
@@ -87,10 +91,9 @@ public class TaskDetails extends AppCompatActivity {
                         ImageView displayImage = findViewById(R.id.displayImage);
                         displayImage.setImageBitmap(BitmapFactory.decodeFile(success.getFile().getPath()));
                     },
-                    failure -> Log.i("TaskDetail","failed image acquisition")
+                    failure -> Log.i("TaskDetail", "failed image acquisition")
             );
         }
-
     }
 
 

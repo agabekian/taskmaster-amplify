@@ -12,32 +12,31 @@
         android:layout_width="130dp"
         android:layout_height="55dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="460dp"
         android:layout_marginEnd="26dp"
+        android:layout_marginBottom="196dp"
         android:backgroundTint="@color/button_background_color"
         android:text="@string/add_task"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnMainActivity_Tasks"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnMainActivity_Tasks"
         android:layout_width="130dp"
         android:layout_height="55dp"
         android:layout_marginStart="26dp"
-        android:layout_marginTop="460dp"
         android:layout_marginEnd="68dp"
+        android:layout_marginBottom="196dp"
         android:backgroundTint="@color/button_background_color"
         android:text="@string/all_tasks"
-
         android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnAdd"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toEndOf="@+id/btnAdd" />
 
     <TextView
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/Main_TVPersonName"
         android:layout_width="318dp"
         android:layout_height="48dp"
         android:layout_marginTop="116dp"
@@ -52,68 +51,68 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
-        android:id="@+id/MainActivitySignInBttn"
-        android:layout_width="71dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="118dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="480dp"
-        android:text="Sign In"
-        android:textSize="8sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintVertical_bias="1.0" />
+<!--    <Button-->
+<!--        android:id="@+id/MainActivitySignInBttn"-->
+<!--        android:layout_width="71dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginTop="118dp"-->
+<!--        android:layout_marginEnd="49dp"-->
+<!--        android:layout_marginBottom="480dp"-->
+<!--        android:text="Sign In"-->
+<!--        android:textSize="8sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
 
-    <Button
-        android:id="@+id/MainActivityVerifyBttn"
-        android:layout_width="71dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="184dp"
-        android:layout_marginBottom="296dp"
-        android:text="Verify"
-        android:textSize="8sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+<!--    <Button-->
+<!--        android:id="@+id/MainActivityVerifyBttn"-->
+<!--        android:layout_width="71dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginTop="116dp"-->
+<!--        android:layout_marginEnd="184dp"-->
+<!--        android:layout_marginBottom="296dp"-->
+<!--        android:text="Verify"-->
+<!--        android:textSize="8sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/btnAdd"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />-->
 
-    <Button
-        android:id="@+id/MainActivitySignUpBttn"
-        android:layout_width="71dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="280dp"
-        android:layout_marginBottom="296dp"
-        android:text="Sign Up"
-        android:textSize="8sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <Button-->
+<!--        android:id="@+id/MainActivitySignUpBttn"-->
+<!--        android:layout_width="71dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginTop="280dp"-->
+<!--        android:layout_marginBottom="296dp"-->
+<!--        android:text="Sign Up"-->
+<!--        android:textSize="8sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/btnAdd"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <ImageView
-        android:id="@+id/MainActivityImageViewUserProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="2dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+<!--    <ImageView-->
+<!--        android:id="@+id/MainActivityImageViewUserProfile"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:layout_marginEnd="2dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@android:drawable/btn_star_big_on" />-->
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginBottom="23dp"
-        android:minHeight="48dp"
-        android:text="Switch"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <Switch-->
+<!--        android:id="@+id/switch1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="26dp"-->
+<!--        android:layout_marginTop="45dp"-->
+<!--        android:layout_marginBottom="23dp"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:text="Switch"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

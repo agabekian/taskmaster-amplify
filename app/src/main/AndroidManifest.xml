@@ -42,13 +42,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".activities.Settings"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".activities.MyTasksActivity"
             android:exported="false">
             <meta-data

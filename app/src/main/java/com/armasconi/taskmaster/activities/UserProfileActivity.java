@@ -2,6 +2,7 @@ package com.armasconi.taskmaster.activities;
 
 import com.armasconi.taskmaster.R;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -19,7 +21,7 @@ public class UserProfileActivity extends AppCompatActivity {
     SharedPreferences preferences;
     public static final String USERNAME_TAG = "username";
     public static final String USER_PHONE_TAG = "userPhone";
-    public static final String USER_ADDRESS_TAG = "userAddress";
+    public static final String TEAMNAME_TAG = "teamname";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +29,26 @@ public class UserProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user_profile);
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
         saveValuesToSharedPrefs();
-    }
 
+        setContentView(R.layout.activity_user_profile);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true); //back button
+        actionBar.setHomeButtonEnabled(true);
+
+        preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        saveValuesToSharedPrefs();
+    }
+    @Override
+    //actual back button functionality as per AI
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     public void saveValuesToSharedPrefs() {
         // Setup the editor -> sharedPrefs is read only by default
         SharedPreferences.Editor preferenceEditor = preferences.edit();
@@ -40,10 +60,10 @@ public class UserProfileActivity extends AppCompatActivity {
             EditText userPhoneNumber = findViewById(R.id.UserProfileETPhoneNumber);
             String userPNString = userPhoneNumber.getText().toString();
             // method 1
-            String userAddress = ((EditText) findViewById(R.id.USerProfileEditTextAddress)).getText().toString();
+            String userTeam = ((EditText) findViewById(R.id.UserProfileETTeam)).getText().toString();
             preferenceEditor.putString(USERNAME_TAG, usernameText);
             preferenceEditor.putString(USER_PHONE_TAG, userPNString);
-            preferenceEditor.putString(USER_ADDRESS_TAG, userAddress);
+            preferenceEditor.putString(TEAMNAME_TAG, userTeam);
             preferenceEditor.apply(); // TODO: Nothing saves unless you do this, DONT FORGET!!
 
             Toast.makeText(this, "Settings Saved!", Toast.LENGTH_SHORT).show();

@@ -1321,6 +1321,7 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
+color colorAccent
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1365,6 +1366,7 @@ color dim_foreground_material_dark
 color dim_foreground_material_light
 color error_color_material_dark
 color error_color_material_light
+color font_color
 color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
@@ -1859,6 +1861,7 @@ color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
 color offwhite
+color overflow_background
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2706,9 +2709,7 @@ id CTRL
 id FUNCTION
 id META
 id MainActivityImageViewUserProfile
-id MainActivitySignInBttn
-id MainActivitySignUpBttn
-id MainActivityVerifyBttn
+id Main_TVPersonName
 id MyTaskFrag
 id MyTaskFragTVBody
 id MyTaskFragTVName
@@ -2723,7 +2724,6 @@ id SuperPetDeleteImage
 id SuperPetRecyclerView
 id TOP_END
 id TOP_START
-id USerProfileEditTextAddress
 id UserProfileETPhoneNumber
 id UserProfileETTeam
 id UserProfileETUsername
@@ -2904,7 +2904,6 @@ id easeIn
 id easeInOut
 id easeOut
 id east
-id editTextTextPersonName
 id edit_query
 id elastic
 id emailBox
@@ -3017,8 +3016,9 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id media_actions
-id menuSettingsItem
 id menuSignInItem
+id menuSignOutItem
+id menuSignUpItem
 id message
 id middle
 id mini
@@ -3183,7 +3183,6 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
-id switch1
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3390,7 +3389,6 @@ layout activity_add_task
 layout activity_dev_menu
 layout activity_main
 layout activity_my_task
-layout activity_settings
 layout activity_sign_in
 layout activity_sign_up
 layout activity_task_details
@@ -3678,6 +3676,7 @@ string path_password_strike_through
 string placeholder_device_info
 string placeholder_env_info
 string placeholder_logs
+string profile
 string progress
 string retry
 string save
@@ -3686,8 +3685,11 @@ string search_logs_hint
 string search_menu_title
 string settings
 string signin
+string signout
+string signup
 string status_bar_notification_info_overflow
 string task
+string username
 string verbose
 string warn
 style AlertDialog_AppCompat

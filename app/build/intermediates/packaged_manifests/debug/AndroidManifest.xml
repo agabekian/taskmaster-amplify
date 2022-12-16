@@ -70,13 +70,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name="com.armasconi.taskmaster.activities.Settings"
-            android:exported="false" >
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name="com.armasconi.taskmaster.activities.MyTasksActivity"
             android:exported="false" >
             <meta-data
