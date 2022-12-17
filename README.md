@@ -51,7 +51,7 @@ Todo: fix time display in Tasks page.
 * Built signed AAB.
 * Answered most of the questions and setup _internal_ testing.
 * More readable temporal time display in recycler view.
-* 
+
 ![](screenshots/tasks.png)
 ![](screenshots/Screenshot_20221212_165216.png)
 ![](screenshots/Screenshot_20221212_185217.png)
@@ -59,7 +59,8 @@ Todo: fix time display in Tasks page.
 ![](screenshots/signin.png)
 ![](screenshots/image.png)
 ![](screenshots/details.png)
-![](screenshots/recycler.png) 
+![](screenshots/recycler.png)
+
 amplify add storage
 create/update, read, delete
 
