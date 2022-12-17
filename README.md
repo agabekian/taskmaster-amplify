@@ -45,15 +45,32 @@ Todo: fix time display in Tasks page.
 * User Profile
 * 
 ```12.14.22```
-Added image upload and display functionality
+* Added image upload and display functionality
+  ```12.15.22```
+* Optimized imports, cleaned up and prepered the app for the google store. Graphics uploaded.
+* Built signed AAB.
+* Answered most of the questions and setup _internal_ testing.
+* More readable temporal time display in recycler view.
+* 
 ![](screenshots/tasks.png)
 ![](screenshots/Screenshot_20221212_165216.png)
 ![](screenshots/Screenshot_20221212_185217.png)
 ![](screenshots/login.png)
 ![](screenshots/signin.png)
 ![](screenshots/image.png)
+![](screenshots/details.png)
+![](screenshots/recycler.png) 
 amplify add storage
 create/update, read, delete
+
+
+
+
+
+
+
+
+
 
 You can tell git to stop ignoring changes to the file with:
 ```git update-index --no-assume-unchanged path/to/file
