@@ -6,11 +6,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.SharedPreferences;
-import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.MenuItem;
 import android.widget.Button;
@@ -32,6 +28,7 @@ public class UserProfileActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_user_profile);
         ActionBar actionBar = getSupportActionBar();
+        assert actionBar != null;
         actionBar.setDisplayHomeAsUpEnabled(true); //back button
         actionBar.setHomeButtonEnabled(true);
 
@@ -41,13 +38,11 @@ public class UserProfileActivity extends AppCompatActivity {
     @Override
     //actual back button functionality as per AI
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
     public void saveValuesToSharedPrefs() {
         // Setup the editor -> sharedPrefs is read only by default

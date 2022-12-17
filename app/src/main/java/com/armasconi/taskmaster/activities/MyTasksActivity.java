@@ -1,5 +1,6 @@
 package com.armasconi.taskmaster.activities;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.BitmapFactory;
@@ -22,7 +23,6 @@ import com.armasconi.taskmaster.adapter.TaskRecyclerViewAdapter;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class MyTasksActivity extends AppCompatActivity {
@@ -30,17 +30,16 @@ public class MyTasksActivity extends AppCompatActivity {
     public static final String MY_TASK_NAME = "taskTitle";
     public static final String MY_TASK_BODY = "taskDescription";
 
-    public static final Boolean MY_TASK_STATE = false;
+//    public static final Boolean MY_TASK_STATE = false;
     TaskRecyclerViewAdapter adapter;
     private List<MyTask> allTasks;
 
-//    SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-//    String teamname = preferences.getString(Settings.TEAMNAME_TAG, "No username");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_task);
         ActionBar actionBar = getSupportActionBar();
+        assert actionBar != null;
         actionBar.setDisplayHomeAsUpEnabled(true); //back button
         actionBar.setHomeButtonEnabled(true);
 
@@ -55,15 +54,14 @@ public class MyTasksActivity extends AppCompatActivity {
     @Override
     //back button functionality as per AI
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     public void setupRecyclerView() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         String teamname = preferences.getString(UserProfileActivity.TEAMNAME_TAG, "No username");

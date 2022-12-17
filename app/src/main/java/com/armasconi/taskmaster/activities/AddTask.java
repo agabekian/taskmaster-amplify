@@ -6,17 +6,11 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.documentfile.provider.DocumentFile;
-//import androidx.room.Room;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
+
 import android.os.Bundle;
 import android.provider.OpenableColumns;
 import android.util.Log;
@@ -69,6 +63,7 @@ public class AddTask extends AppCompatActivity {
 
 
         ActionBar actionBar = getSupportActionBar();
+        assert actionBar != null;
         actionBar.setDisplayHomeAsUpEnabled(true); //back button
         actionBar.setHomeButtonEnabled(true);
 
@@ -156,9 +151,7 @@ public class AddTask extends AppCompatActivity {
 
     // TODO 3-2 setupAddImageBttn
     private void setupAddImageBttn() {
-        findViewById(R.id.AddASuperPetBttnAddImage).setOnClickListener(v -> {
-            launchImageSelectionIntent();
-        });
+        findViewById(R.id.AddASuperPetBttnAddImage).setOnClickListener(v -> launchImageSelectionIntent());
     }
 
     // Todo Step 3-4 create launchImageSelectionIntent
@@ -173,24 +166,23 @@ public class AddTask extends AppCompatActivity {
 
     // TODO Step 3-5 getImagePickingActivityResultLauncher
     private ActivityResultLauncher<Intent> getImagePickingActivityResultLauncher() {
-        ActivityResultLauncher<Intent> imagePickingActivityResultLauncher =
-                registerForActivityResult(
-                        new ActivityResultContracts.StartActivityForResult(),
-                        result -> {
-                            Uri pickedImageFileUri = result.getData().getData();
-                            try {
-                                // take in the file URI and turn it into a inputStream
-                                InputStream pickedImageInputStream = getContentResolver().openInputStream(pickedImageFileUri);
-                                String pickedImageFilename = getFileNameFromUri(pickedImageFileUri);
+        return registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(),
+                result -> {
+                    assert result.getData() != null;
+                    Uri pickedImageFileUri = result.getData().getData();
+                    try {
+                        // take in the file URI and turn it into a inputStream
+                        InputStream pickedImageInputStream = getContentResolver().openInputStream(pickedImageFileUri);
+                        String pickedImageFilename = getFileNameFromUri(pickedImageFileUri);
 //                                String pickedImageFilename = DocumentFile.fromSingleUri(this, pickedImageFileUri).getName();
-                                Log.i(TAG, "Succeeded in getting input stream from file on phone! Filename is: " + pickedImageFilename);
-                                uploadInputStreamToS3(pickedImageInputStream, pickedImageFilename, pickedImageFileUri);
-                            } catch (FileNotFoundException fnfe) {
-                                Log.e(TAG, "Could not get file from file picker" + fnfe.getMessage());
-                            }
-                        }
-                );
-        return imagePickingActivityResultLauncher;
+                        Log.i(TAG, "Succeeded in getting input stream from file on phone! Filename is: " + pickedImageFilename);
+                        uploadInputStreamToS3(pickedImageInputStream, pickedImageFilename, pickedImageFileUri);
+                    } catch (FileNotFoundException fnfe) {
+                        Log.e(TAG, "Could not get file from file picker" + fnfe.getMessage());
+                    }
+                }
+        );
     }
 
     // TODO Step 3-6 uploadInputStreamToS3
@@ -225,13 +217,10 @@ public class AddTask extends AppCompatActivity {
     public String getFileNameFromUri(Uri uri) {
         String result = null;
         if (uri.getScheme().equals("content")) {
-            Cursor cursor = getContentResolver().query(uri, null, null, null, null);
-            try {
+            try (Cursor cursor = getContentResolver().query(uri, null, null, null, null)) {
                 if (cursor != null && cursor.moveToFirst()) {
                     result = cursor.getString(cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME));
                 }
-            } finally {
-                cursor.close();
             }
         }
         if (result == null) {
@@ -269,6 +258,7 @@ public class AddTask extends AppCompatActivity {
             } catch (ExecutionException ee) {
                 Log.e(TAG, "ExecutionException while getting  teams");
             }
+            assert teams != null;
             Team selectedTeam = teams.stream().filter(t -> t.getName().equals(selectedTeamString)).findAny().orElseThrow(RuntimeException::new);
 
             //build pattern for Amplify
@@ -293,12 +283,10 @@ public class AddTask extends AppCompatActivity {
     @Override
     //actual back button functionality as per AI
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 }

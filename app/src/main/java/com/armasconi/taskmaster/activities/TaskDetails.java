@@ -6,18 +6,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
+
 import android.util.Log;
 import android.view.MenuItem;
-import android.widget.CheckedTextView;
+
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.amplifyframework.core.Amplify;
 import com.armasconi.taskmaster.R;
-import com.armasconi.taskmaster.adapter.TaskRecyclerViewAdapter;
+
 
 import java.io.File;
+import java.util.Objects;
 
 public class TaskDetails extends AppCompatActivity {
 
@@ -29,6 +30,7 @@ public class TaskDetails extends AppCompatActivity {
 
         //BACK BUTTON - DRY?
         ActionBar actionBar = getSupportActionBar();
+        assert actionBar != null;
         actionBar.setDisplayHomeAsUpEnabled(true); //back button
         actionBar.setHomeButtonEnabled(true);
         displayTaskName();
@@ -40,27 +42,21 @@ public class TaskDetails extends AppCompatActivity {
     @Override
     //actual back button functionality as per AI
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     public void displayTaskName() {
         Intent callingIntent = getIntent();
         String textStarter = null;
         if (callingIntent != null) {
-            textStarter = task.ge;
+            textStarter = callingIntent.getStringExtra(MyTasksActivity.MY_TASK_NAME);
         }
         TextView taskTextView = findViewById(R.id.taskTextView);
-        if (textStarter != null) {
-            taskTextView.setText(textStarter);
-        } else {
-            taskTextView.setText("Nada");
-        }
+        taskTextView.setText(Objects.requireNonNullElse(textStarter, "Nada"));
     }
 
     public void displayTaskBody() {
@@ -71,11 +67,7 @@ public class TaskDetails extends AppCompatActivity {
             textBody = callingIntent.getStringExtra(MyTasksActivity.MY_TASK_BODY);
         }
         TextView textBodyView = findViewById(R.id.taskTextView2);
-        if (textBody != null) {
-            textBodyView.setText(textBody);
-        } else {
-            textBodyView.setText("No body");
-        }
+        textBodyView.setText(Objects.requireNonNullElse(textBody, "No body"));
     }
 
     public void displayImage() {
