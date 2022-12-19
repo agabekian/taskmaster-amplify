@@ -169,9 +169,9 @@ public class AddTask extends AppCompatActivity {
         return registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
                 result -> {
-                    assert result.getData() != null;
-                    Uri pickedImageFileUri = result.getData().getData();
                     try {
+                        assert result.getData() != null;
+                        Uri pickedImageFileUri = result.getData().getData();
                         // take in the file URI and turn it into a inputStream
                         InputStream pickedImageInputStream = getContentResolver().openInputStream(pickedImageFileUri);
                         String pickedImageFilename = getFileNameFromUri(pickedImageFileUri);
