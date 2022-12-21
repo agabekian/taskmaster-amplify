@@ -2,6 +2,7 @@ package com.armasconi.taskmaster.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -14,7 +15,10 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 import android.widget.TextView;
+import android.widget.Toast;
 
+
+import com.amplifyframework.analytics.AnalyticsEvent;
 import com.amplifyframework.auth.AuthUser;
 import com.amplifyframework.core.Amplify;
 import com.armasconi.taskmaster.R;
@@ -22,6 +26,8 @@ import com.armasconi.taskmaster.activities.auth.SignIn_Activity;
 //import com.armasconi.taskmaster.activities.auth.SignUp_Activity;
 //import com.armasconi.taskmaster.activities.auth.VerifySignUp_Activity;
 import com.armasconi.taskmaster.activities.util.SignOutAmplify;
+
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
     public final String TAG = "main_activity";
@@ -46,8 +52,6 @@ public class MainActivity extends AppCompatActivity {
             signUpItem.setVisible(false);
             signInItem.setVisible(false);
             signOutItem.setVisible(true);
-
-
         }
 
         return true;
@@ -79,6 +83,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        AnalyticsEvent event = AnalyticsEvent.builder()
+//                .name("Opened App")
+//                .addProperty("Time", Long.toString(new Date().getTime()))
+//                .addProperty("trackingEvent", "Main activity was opened")
+//                .build();
+//
+//        Amplify.Analytics.recordEvent(event);
+
 
         // TODO Get the currentAuthUser
         Amplify.Auth.getCurrentUser(
@@ -112,5 +125,14 @@ public class MainActivity extends AppCompatActivity {
             Intent goToForm = new Intent(MainActivity.this, AddTask.class);
             startActivity(goToForm);
         });
+
+        Button goToLocationBtn = MainActivity.this.findViewById(R.id.locateBtn);
+        goToLocationBtn.setOnClickListener(view -> {
+            Intent goToLocate = new Intent(this, LocationActivity.class);
+            Toast.makeText(this, "Getting location!", Toast.LENGTH_SHORT).show();
+            startActivity(goToLocate);
+        });
+
+
     }
 }

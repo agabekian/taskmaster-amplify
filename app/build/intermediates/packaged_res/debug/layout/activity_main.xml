@@ -53,8 +53,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/locateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Locate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="269dp" />
 
-<!--    <Button-->
+
+    <!--    <Button-->
 <!--        android:id="@+id/MainActivitySignInBttn"-->
 <!--        android:layout_width="71dp"-->
 <!--        android:layout_height="48dp"-->

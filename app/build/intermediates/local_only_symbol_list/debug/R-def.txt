@@ -36,12 +36,14 @@ id UserProfileETPhoneNumber
 id UserProfileETTeam
 id UserProfileETUsername
 id UserProfileSaveBttn
+id addressTV
 id btnAdd
 id btnMainActivity_Tasks
 id dateTag
 id displayImage
 id emailBox
 id frameLayout
+id locateBtn
 id menuSignInItem
 id menuSignOutItem
 id menuSignUpItem
@@ -59,6 +61,8 @@ id textView4
 id verifyBttnVerify
 id verifyETConfirmationCode
 layout activity_add_task
+layout activity_analytics
+layout activity_location
 layout activity_main
 layout activity_my_task
 layout activity_sign_in
