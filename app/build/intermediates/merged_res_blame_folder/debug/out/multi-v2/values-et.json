@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.armasconi.taskmaster.app-mergeDebugResources-46:/values-et/values-et.xml",
+            "outputFile": "com.armasconi.taskmaster.app-mergeDebugResources-43:/values-et/values-et.xml",
             "map": [
                 {
                     "source": "/Users/armasconi/.gradle/caches/transforms-3/86cc0bfc30c4f5c99c8ae20b266f57c9/transformed/navigation-ui-2.3.4/res/values-et/values-et.xml",

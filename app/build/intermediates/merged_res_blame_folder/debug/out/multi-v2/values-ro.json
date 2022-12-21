@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.armasconi.taskmaster.app-mergeDebugResources-46:/values-ro/values-ro.xml",
+            "outputFile": "com.armasconi.taskmaster.app-mergeDebugResources-43:/values-ro/values-ro.xml",
             "map": [
                 {
                     "source": "/Users/armasconi/.gradle/caches/transforms-3/75e11374b42ba83fd12d55e4ccb129ba/transformed/play-services-base-18.1.0/res/values-ro/values.xml",
