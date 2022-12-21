@@ -2,32 +2,27 @@ package com.armasconi.taskmaster.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.BitmapFactory;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.amplifyframework.core.Amplify;
 import com.amplifyframework.datastore.generated.model.MyTask;
 import com.armasconi.taskmaster.R;
-import com.armasconi.taskmaster.activities.MyTasksActivity;
 import com.armasconi.taskmaster.activities.TaskDetails;
+import com.armasconi.taskmaster.activities.util.TimeConvertFromIso;
 
-
-import java.io.File;
 import java.util.List;
 
 //TODO Step 1-4: Make a class whose sole purpose is to manage RecyclerViews: a RecyclerView.Adapter
 // TODO Step 3-1: (In RecyclerViewAdapter) Clean up the RecyclerView.Adapter references to actually use TaskRecyclerViewAdapter
 // TODO Step 2-3: (In this activity and RecyclerViewAdapter) Hand in some data items
 
-public class TaskRecyclerViewAdapter extends androidx.recyclerview.widget.RecyclerView.Adapter<TaskRecyclerViewAdapter.MyTaskViewHolder> { //from bottom lone 66
+public class TaskRecyclerViewAdapter extends androidx.recyclerview.widget.RecyclerView.Adapter<TaskRecyclerViewAdapter.MyTaskViewHolder> {
+    //from bottom line 66
     List<MyTask> allTasks;
     Context callingActivity;
 
@@ -62,17 +57,16 @@ public class TaskRecyclerViewAdapter extends androidx.recyclerview.widget.Recycl
 //            callingActivity.startActivity(goToOrderFormIntent);
 //        });
 //    }
+
     @Override
     public void onBindViewHolder(@NonNull MyTaskViewHolder holder, int position) {
-
         TextView taskFragTVName = holder.itemView.findViewById(R.id.MyTaskFragTVName);
         TextView taskFragTVDate = holder.itemView.findViewById(R.id.dateTag);
         TextView taskFragTVState = holder.itemView.findViewById(R.id.MyTaskFragTVState);
         TextView taskFragTVBody = holder.itemView.findViewById(R.id.MyTaskFragTVBody);
-        ImageView taskImage = holder.itemView.findViewById(R.id.SuperPetDeleteImage);
+//        ImageView taskImage = holder.itemView.findViewById(R.id.SuperPetDeleteImage);
         MyTask task = allTasks.get(position);
         String s3ImageKey = task.getS3ImageKey();
-
 //        if (s3ImageKey != null) {
 //
 //            Amplify.Storage.downloadFile(
@@ -86,10 +80,12 @@ public class TaskRecyclerViewAdapter extends androidx.recyclerview.widget.Recycl
 //            );
 //        }
 
-        taskFragTVDate.setText("on " + task.getCreatedAt());
+        taskFragTVDate.setText("on " + TimeConvertFromIso.convert(task.getCreatedAt())); //my custom converter for  ISOtime -alex
         taskFragTVBody.setText(task.getBody());
         taskFragTVState.setText("" + task.getState());
         taskFragTVName.setText((position + 1) + ". " + task.getTitle());
+
+//        taskImage.setImageBitmap();
 
 
         // TODO Step 3-3: (In RecyclerViewAdapter.onBindViewHolder()) Create OnClickListener, make an Intent inside it, and call this Intent with an Extra to go to another Activity
@@ -115,4 +111,5 @@ public class TaskRecyclerViewAdapter extends androidx.recyclerview.widget.Recycl
             super(itemView);
         }
     }
+
 }

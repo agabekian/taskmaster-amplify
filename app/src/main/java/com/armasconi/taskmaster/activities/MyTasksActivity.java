@@ -1,10 +1,14 @@
 package com.armasconi.taskmaster.activities;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,8 +21,8 @@ import com.amplifyframework.datastore.generated.model.MyTask;
 import com.armasconi.taskmaster.R;
 import com.armasconi.taskmaster.adapter.TaskRecyclerViewAdapter;
 
+import java.io.File;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class MyTasksActivity extends AppCompatActivity {
@@ -26,12 +30,9 @@ public class MyTasksActivity extends AppCompatActivity {
     public static final String MY_TASK_NAME = "taskTitle";
     public static final String MY_TASK_BODY = "taskDescription";
 
-    public static final Boolean MY_TASK_STATE = false;
+//    public static final Boolean MY_TASK_STATE = false;
     TaskRecyclerViewAdapter adapter;
     private List<MyTask> allTasks;
-
-//    SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-//    String teamname = preferences.getString(Settings.TEAMNAME_TAG, "No username");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,28 +43,27 @@ public class MyTasksActivity extends AppCompatActivity {
         actionBar.setHomeButtonEnabled(true);
 
         setupRecyclerView();
+        displayImage();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
     }
-
     @Override
     //back button functionality as per AI
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     public void setupRecyclerView() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        String teamname = preferences.getString(Settings.TEAMNAME_TAG, "No username");
+        String teamname = preferences.getString(UserProfileActivity.TEAMNAME_TAG, "No username");
         allTasks = new ArrayList<>();
         Amplify.API.query(
                 ModelQuery.list(MyTask.class),
@@ -86,4 +86,22 @@ public class MyTasksActivity extends AppCompatActivity {
         adapter = new TaskRecyclerViewAdapter(allTasks, this);
         taskRV.setAdapter(adapter);
     }
+    public void displayImage() {
+        Intent callingIntent = getIntent();
+        String s3ImageKey = callingIntent.getStringExtra("s3ImageKey");
+        if (s3ImageKey != null) {
+            String[] segments = s3ImageKey.split("/"); //key has "public" prefix for odd reason so gotta do this
+            s3ImageKey = segments[segments.length - 1];
+            Amplify.Storage.downloadFile(
+                    s3ImageKey,
+                    new File(getApplication().getFilesDir(), s3ImageKey),
+                    success -> {
+                        ImageView displayImage = findViewById(R.id.displayImage);
+                        displayImage.setImageBitmap(BitmapFactory.decodeFile(success.getFile().getPath()));
+                    },
+                    failure -> Log.i("TaskDetail", "failed image acquisition")
+            );
+        }
+    }
+
 }

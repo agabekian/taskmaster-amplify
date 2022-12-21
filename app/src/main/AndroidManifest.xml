@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:name=".TaskMasterAmplifyApp"
         android:allowBackup="true"
@@ -13,6 +16,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Taskmaster"
         tools:targetApi="31">
+        <activity
+            android:name=".Analytics_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.LocationActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".activities.UserProfileActivity"
             android:exported="false">
@@ -36,13 +53,6 @@
         </activity>
         <activity
             android:name=".activities.auth.VerifySignUp_Activity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".activities.Settings"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

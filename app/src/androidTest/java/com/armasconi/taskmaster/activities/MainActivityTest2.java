@@ -42,63 +42,63 @@ public class MainActivityTest2 {
     @Test
     public void mainActivityTest2() {
         ViewInteraction materialButton = onView(
-allOf(withId(R.id.btnAdd), withText("Add Task"),
-childAtPosition(
-childAtPosition(
-withId(android.R.id.content),
-0),
-0),
-isDisplayed()));
+                allOf(withId(R.id.btnAdd), withText("Add Task"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                0),
+                        isDisplayed()));
         materialButton.perform(click());
-        
+
         ViewInteraction appCompatEditText = onView(
-allOf(withId(R.id.AddATaskETName),
-childAtPosition(
-childAtPosition(
-withId(android.R.id.content),
-0),
-2),
-isDisplayed()));
+                allOf(withId(R.id.AddATaskETName),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                2),
+                        isDisplayed()));
         appCompatEditText.perform(replaceText("f,ower"), closeSoftKeyboard());
-        
+
         ViewInteraction appCompatEditText2 = onView(
-allOf(withId(R.id.AddTaskBody),
-childAtPosition(
-childAtPosition(
-withId(android.R.id.content),
-0),
-3),
-isDisplayed()));
+                allOf(withId(R.id.AddTaskBody),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                3),
+                        isDisplayed()));
         appCompatEditText2.perform(replaceText("red"), closeSoftKeyboard());
-        
+
         ViewInteraction floatingActionButton = onView(
-allOf(withId(R.id.AddASuperPetBttnAddImage),
-childAtPosition(
-childAtPosition(
-withId(android.R.id.content),
-0),
-0),
-isDisplayed()));
+                allOf(withId(R.id.AddASuperPetBttnAddImage),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                0),
+                        isDisplayed()));
         floatingActionButton.perform(click());
-        
+
         ViewInteraction materialButton2 = onView(
-allOf(withId(R.id.AddTaskSaveBttn), withText("Save"),
-childAtPosition(
-childAtPosition(
-withId(android.R.id.content),
-0),
-6),
-isDisplayed()));
+                allOf(withId(R.id.AddTaskSaveBttn), withText("Save"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                6),
+                        isDisplayed()));
         materialButton2.perform(click());
-        
+
         ViewInteraction imageButton = onView(
-allOf(withContentDescription("Navigate up"),
-withParent(allOf(withId(com.amplifyframework.core.R.id.action_bar),
-withParent(withId(com.amplifyframework.core.R.id.action_bar_container)))),
-isDisplayed()));
+                allOf(withContentDescription("Navigate up"),
+                        withParent(allOf(withId(com.amplifyframework.core.R.id.action_bar),
+                                withParent(withId(com.amplifyframework.core.R.id.action_bar_container)))),
+                        isDisplayed()));
         imageButton.check(matches(isDisplayed()));
-        }
-    
+    }
+
     private static Matcher<View> childAtPosition(
             final Matcher<View> parentMatcher, final int position) {
 
@@ -113,8 +113,8 @@ isDisplayed()));
             public boolean matchesSafely(View view) {
                 ViewParent parent = view.getParent();
                 return parent instanceof ViewGroup && parentMatcher.matches(parent)
-                        && view.equals(((ViewGroup)parent).getChildAt(position));
+                        && view.equals(((ViewGroup) parent).getChildAt(position));
             }
         };
     }
-    }
+}

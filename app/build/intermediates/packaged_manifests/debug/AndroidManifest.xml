@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.armasconi.taskmaster"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="2"
+    android:versionName="2" >
 
     <uses-sdk
         android:minSdkVersion="24"
         android:targetSdkVersion="32" />
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" /> <!-- Permission will be merged into the manifest of the hosting app. -->
     <!-- Is required to launch foreground transfer service for targetSdkVersion 28+. -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -42,6 +44,20 @@
         android:testOnly="true"
         android:theme="@style/Theme.Taskmaster" >
         <activity
+            android:name="com.armasconi.taskmaster.Analytics_Activity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.armasconi.taskmaster.activities.LocationActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.armasconi.taskmaster.activities.UserProfileActivity"
             android:exported="false" >
             <meta-data
@@ -64,13 +80,6 @@
         </activity>
         <activity
             android:name="com.armasconi.taskmaster.activities.auth.VerifySignUp_Activity"
-            android:exported="false" >
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name="com.armasconi.taskmaster.activities.Settings"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -118,6 +127,14 @@
         <activity
             android:name="com.amplifyframework.devmenu.DeveloperMenuActivity"
             android:theme="@style/OverlayActivity" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
@@ -133,6 +150,12 @@
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <activity
+            android:name="com.amazonaws.mobileconnectors.pinpoint.targeting.notification.PinpointNotificationActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:theme="@style/PinpointNotificationActivityTheme" />
 
         <service
             android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
@@ -229,7 +252,11 @@
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"
             android:directBootAware="true"
-            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+            android:exported="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
         <activity
             android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
             android:enabled="false"
