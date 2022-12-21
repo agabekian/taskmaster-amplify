@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="24"
-        android:targetSdkVersion="32" />
+        android:targetSdkVersion="33" />
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -26,6 +26,7 @@
         </intent>
     </queries>
 
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
@@ -44,7 +45,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.Taskmaster" >
         <activity
-            android:name="com.armasconi.taskmaster.Analytics_Activity"
+            android:name="com.armasconi.taskmaster.activities.Analytics_Activity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -136,6 +137,31 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+        <activity
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.armasconi.taskmaster.androidx-startup"
@@ -150,12 +176,6 @@
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
         </provider>
-
-        <activity
-            android:name="com.amazonaws.mobileconnectors.pinpoint.targeting.notification.PinpointNotificationActivity"
-            android:exported="false"
-            android:launchMode="singleInstance"
-            android:theme="@style/PinpointNotificationActivityTheme" />
 
         <service
             android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
@@ -252,11 +272,7 @@
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"
             android:directBootAware="true"
-            android:exported="false" />
-
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
         <activity
             android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
             android:enabled="false"
