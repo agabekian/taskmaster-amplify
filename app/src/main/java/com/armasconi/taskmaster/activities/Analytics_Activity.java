@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.amplifyframework.AmplifyException;
 import com.amplifyframework.analytics.AnalyticsEvent;
-import com.amplifyframework.analytics.pinpoint.AWSPinpointAnalyticsPlugin;
+//import com.amplifyframework.analytics.pinpoint.AWSPinpointAnalyticsPlugin;
 import com.amplifyframework.auth.cognito.AWSCognitoAuthPlugin;
 import com.amplifyframework.core.Amplify;
 import com.armasconi.taskmaster.R;

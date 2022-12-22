@@ -515,7 +515,7 @@ ADDED from [androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms
 activity#androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity
 ADDED from [androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:27:9-34:20
 	android:exported
-		ADDED from [androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:30:13-36
+		ADDED from [androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:30:13-37
 	android:theme
 		ADDED from [androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:29:13-49
 	android:name
@@ -525,7 +525,7 @@ ADDED from [androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms
 activity#androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
 ADDED from [androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:35:9-42:20
 	android:exported
-		ADDED from [androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:38:13-36
+		ADDED from [androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:38:13-37
 	android:theme
 		ADDED from [androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:37:13-49
 	android:name
@@ -533,7 +533,7 @@ ADDED from [androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms
 activity#androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity
 ADDED from [androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:43:9-50:20
 	android:exported
-		ADDED from [androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:46:13-36
+		ADDED from [androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:46:13-37
 	android:theme
 		ADDED from [androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:45:13-56
 	android:name

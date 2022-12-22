@@ -20,8 +20,9 @@ public class TaskMasterAmplifyApp extends Application {
         try {
             Amplify.addPlugin(new AWSApiPlugin());
             Amplify.addPlugin(new AWSCognitoAuthPlugin());
-            Amplify.addPlugin(new AWSPinpointAnalyticsPlugin());
             Amplify.addPlugin(new AWSS3StoragePlugin());
+            Amplify.addPlugin(new AWSPinpointAnalyticsPlugin());
+
             Amplify.configure(getApplicationContext());
         } catch (AmplifyException ae) {
             Log.e(TAG, "Error on Amplify init" + ae.getMessage(), ae);
