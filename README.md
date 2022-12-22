@@ -54,7 +54,8 @@ Todo: fix time display in Tasks page.
 
 ```12.19.22```
 The app now logs location of the user (screenshot), if the permissions are explicitly enabled in google settings.
-
+```12.20-21.22```
+Pinpoint analytics implemented (see aws screenshot)
 
 ![](screenshots/Screenshot_20221212_165216.png)
 ![](screenshots/Screenshot_20221212_185217.png)
@@ -64,12 +65,7 @@ The app now logs location of the user (screenshot), if the permissions are expli
 ![](screenshots/details.png)
 ![](screenshots/recycler.png)
 ![](screenshots/location.png)
-amplify add storage
-create/update, read, delete
-
-
-
-
+![](scremenshots/AWS-analytics.png)
 
 
 
