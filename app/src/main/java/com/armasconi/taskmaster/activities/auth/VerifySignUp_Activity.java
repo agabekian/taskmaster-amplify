@@ -30,8 +30,8 @@ public class VerifySignUp_Activity extends AppCompatActivity {
     public void setUpVerifyForm() {
         // accept extra from calling activity
         // gather info -> email & verification code
-//        String userEmail = callingIntent.getStringExtra(SignUp_Activity.SIGNUP_EMAIL_TAG);
-        String userEmail = callingIntent.getStringExtra(MainActivity.SIGNUP_EMAIL_TAG);
+        String userEmail = callingIntent.getStringExtra(SignUp_Activity.SIGNUP_EMAIL_TAG);
+//        String userEmail = callingIntent.getStringExtra(MainActivity.SIGNUP_EMAIL_TAG);
         ((TextView) findViewById(R.id.emailBox)).setText("for da usa " + userEmail);
 //        ((TextView) findViewById(R.id.editTextTextPersonName)).setText(username + " (" + teamname + ")" + " Tasks"); //Main title
         findViewById(R.id.verifyBttnVerify).setOnClickListener(v -> {

@@ -44,7 +44,7 @@ public class SignUp_Activity extends AppCompatActivity {
                         // send them to the verify activity
                         Intent goToVerifyActivity = new Intent(this, VerifySignUp_Activity.class);
                         // put an extra in the intent -> user email. Auto fill
-                        goToVerifyActivity.putExtra(SIGNUP_EMAIL_TAG, "2008nv@gmail.com");
+                        goToVerifyActivity.putExtra(SIGNUP_EMAIL_TAG, userEmail);
                         startActivity(goToVerifyActivity);
                     },
                     failure -> {

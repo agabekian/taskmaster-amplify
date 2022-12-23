@@ -43,7 +43,7 @@
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@strings/task"
+        android:hint="@string/task"
         android:inputType="textPersonName"
         android:textColor="#594F4F"
         android:textColorHighlight="#E13333"
@@ -57,11 +57,22 @@
         android:id="@+id/locateBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="163dp"
         android:text="Locate"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="269dp" />
-
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/MainActivityAdsBttn"
+        android:layout_width="74dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="331dp"
+        android:layout_marginBottom="16dp"
+        android:text="Ads"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!--    <Button-->
 <!--        android:id="@+id/MainActivitySignInBttn"-->

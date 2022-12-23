@@ -7,7 +7,7 @@ export type AmplifyDependentResourcesAttributes = {
         }
     },
     "auth": {
-        "taskmastercopy529e5ba9": {
+        "taskmastercopy068afb42": {
             "IdentityPoolId": "string",
             "IdentityPoolName": "string",
             "UserPoolId": "string",
@@ -18,7 +18,7 @@ export type AmplifyDependentResourcesAttributes = {
         }
     },
     "storage": {
-        "mystuff": {
+        "s36e99b139": {
             "BucketName": "string",
             "Region": "string"
         }

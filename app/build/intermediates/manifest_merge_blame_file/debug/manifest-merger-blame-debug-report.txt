@@ -45,88 +45,88 @@
 25-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:31:13-90
 25-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:31:21-87
 26        </intent>
-27    </queries>
-28
-29    <uses-permission android:name="android.permission.REORDER_TASKS" />
-29-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:24:5-72
-29-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:24:22-69
-30    <uses-permission android:name="android.permission.WAKE_LOCK" />
-30-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:5-68
-30-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:22-65
-31    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-31-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
-31-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
+27        <!-- For browser content -->
+28        <intent>
+28-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:32:9-38:18
+29            <action android:name="android.intent.action.VIEW" />
+29-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:26:13-65
+29-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:26:21-62
+30
+31            <category android:name="android.intent.category.BROWSABLE" />
+31-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:35:13-74
+31-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:35:23-71
 32
-33    <application
-33-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:8:5-95:19
-34        android:name="com.armasconi.taskmaster.TaskMasterAmplifyApp"
-34-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:9:9-45
-35        android:allowBackup="true"
-35-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:10:9-35
-36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-36-->[androidx.core:core:1.8.0] /Users/armasconi/.gradle/caches/transforms-3/87a796fe63836d99a2198ac6a6284cb3/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
-37        android:dataExtractionRules="@xml/data_extraction_rules"
-37-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:11:9-65
-38        android:debuggable="true"
-39        android:extractNativeLibs="false"
-40        android:fullBackupContent="@xml/backup_rules"
-40-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:12:9-54
-41        android:icon="@mipmap/ic_launcher"
-41-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:13:9-43
-42        android:label="@string/app_name"
-42-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:14:9-41
-43        android:roundIcon="@mipmap/ic_launcher_round"
-43-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:15:9-54
-44        android:supportsRtl="true"
-44-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:16:9-35
-45        android:testOnly="true"
-46        android:theme="@style/Theme.Taskmaster" >
-46-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:17:9-48
-47        <activity
-47-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:19:9-25:20
-48            android:name="com.armasconi.taskmaster.activities.Analytics_Activity"
-48-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:20:13-58
-49            android:exported="false" >
-49-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:21:13-37
-50            <meta-data
-50-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:13-24:36
-51                android:name="android.app.lib_name"
-51-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:23:17-52
-52                android:value="" />
-52-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:17-33
-53        </activity>
-54        <activity
-54-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:26:9-32:20
-55            android:name="com.armasconi.taskmaster.activities.LocationActivity"
-55-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:27:13-56
-56            android:exported="false" >
-56-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:28:13-37
-57            <meta-data
-57-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:13-24:36
-58                android:name="android.app.lib_name"
-58-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:23:17-52
-59                android:value="" />
-59-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:17-33
-60        </activity>
-61        <activity
-61-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:33:9-39:20
-62            android:name="com.armasconi.taskmaster.activities.UserProfileActivity"
-62-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:34:13-59
-63            android:exported="false" >
-63-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:35:13-37
-64            <meta-data
-64-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:13-24:36
-65                android:name="android.app.lib_name"
-65-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:23:17-52
-66                android:value="" />
-66-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:17-33
-67        </activity>
+33            <data android:scheme="https" />
+33-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:28:13-44
+33-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:28:19-41
+34        </intent>
+35    </queries>
+36
+37    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+37-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:26:5-79
+37-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:26:22-76
+38    <uses-permission android:name="android.permission.WAKE_LOCK" />
+38-->[com.google.android.gms:play-services-measurement-sdk-api:20.1.2] /Users/armasconi/.gradle/caches/transforms-3/e0b66cf869801196e6ad06eb75e01259/transformed/play-services-measurement-sdk-api-20.1.2/AndroidManifest.xml:25:5-68
+38-->[com.google.android.gms:play-services-measurement-sdk-api:20.1.2] /Users/armasconi/.gradle/caches/transforms-3/e0b66cf869801196e6ad06eb75e01259/transformed/play-services-measurement-sdk-api-20.1.2/AndroidManifest.xml:25:22-65
+39    <uses-permission android:name="android.permission.REORDER_TASKS" />
+39-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:24:5-72
+39-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:24:22-69
+40    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+40-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
+40-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
+41
+42    <application
+42-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:8:5-107:19
+43        android:name="com.armasconi.taskmaster.TaskMasterAmplifyApp"
+43-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:9:9-45
+44        android:allowBackup="true"
+44-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:10:9-35
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.8.0] /Users/armasconi/.gradle/caches/transforms-3/87a796fe63836d99a2198ac6a6284cb3/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+46        android:dataExtractionRules="@xml/data_extraction_rules"
+46-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:11:9-65
+47        android:debuggable="true"
+48        android:extractNativeLibs="false"
+49        android:fullBackupContent="@xml/backup_rules"
+49-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:12:9-54
+50        android:icon="@mipmap/ic_launcher"
+50-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:13:9-43
+51        android:label="@string/app_name"
+51-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:14:9-41
+52        android:roundIcon="@mipmap/ic_launcher_round"
+52-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:15:9-54
+53        android:supportsRtl="true"
+53-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:16:9-35
+54        android:testOnly="true"
+55        android:theme="@style/Theme.Taskmaster" >
+55-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:17:9-48
+56        <activity
+56-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:19:9-25:20
+57            android:name="com.armasconi.taskmaster.activities.AdsActivity"
+57-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:20:13-51
+58            android:exported="false" >
+58-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:21:13-37
+59            <meta-data
+59-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:13-24:36
+60                android:name="android.app.lib_name"
+60-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:23:17-52
+61                android:value="" />
+61-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:17-33
+62        </activity>
+63
+64        <meta-data
+64-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:27:9-29:70
+65            android:name="com.google.android.gms.ads.APPLICATION_ID"
+65-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:28:13-69
+66            android:value="ca-app-pub-3779717397510597~6482765873" />
+66-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:29:13-67
+67
 68        <activity
-68-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:40:9-46:20
-69            android:name="com.armasconi.taskmaster.activities.auth.SignIn_Activity"
-69-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:41:13-60
+68-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:31:9-37:20
+69            android:name="com.armasconi.taskmaster.activities.Analytics_Activity"
+69-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:32:13-58
 70            android:exported="false" >
-70-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:42:13-37
+70-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:33:13-37
 71            <meta-data
 71-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:13-24:36
 72                android:name="android.app.lib_name"
@@ -135,11 +135,11 @@
 73-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:17-33
 74        </activity>
 75        <activity
-75-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:47:9-53:20
-76            android:name="com.armasconi.taskmaster.activities.auth.SignUp_Activity"
-76-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:48:13-60
+75-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:38:9-44:20
+76            android:name="com.armasconi.taskmaster.activities.LocationActivity"
+76-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:39:13-56
 77            android:exported="false" >
-77-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:49:13-37
+77-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:40:13-37
 78            <meta-data
 78-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:13-24:36
 79                android:name="android.app.lib_name"
@@ -148,11 +148,11 @@
 80-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:17-33
 81        </activity>
 82        <activity
-82-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:54:9-60:20
-83            android:name="com.armasconi.taskmaster.activities.auth.VerifySignUp_Activity"
-83-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:55:13-66
+82-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:45:9-51:20
+83            android:name="com.armasconi.taskmaster.activities.UserProfileActivity"
+83-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:46:13-59
 84            android:exported="false" >
-84-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:56:13-37
+84-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:47:13-37
 85            <meta-data
 85-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:13-24:36
 86                android:name="android.app.lib_name"
@@ -161,11 +161,11 @@
 87-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:17-33
 88        </activity>
 89        <activity
-89-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:61:9-67:20
-90            android:name="com.armasconi.taskmaster.activities.MyTasksActivity"
-90-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:62:13-55
+89-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:52:9-58:20
+90            android:name="com.armasconi.taskmaster.activities.auth.SignIn_Activity"
+90-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:53:13-60
 91            android:exported="false" >
-91-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:63:13-37
+91-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:54:13-37
 92            <meta-data
 92-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:13-24:36
 93                android:name="android.app.lib_name"
@@ -174,11 +174,11 @@
 94-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:17-33
 95        </activity>
 96        <activity
-96-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:68:9-74:20
-97            android:name="com.armasconi.taskmaster.activities.TaskDetails"
-97-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:69:13-51
+96-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:59:9-65:20
+97            android:name="com.armasconi.taskmaster.activities.auth.SignUp_Activity"
+97-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:60:13-60
 98            android:exported="false" >
-98-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:70:13-37
+98-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:61:13-37
 99            <meta-data
 99-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:13-24:36
 100                android:name="android.app.lib_name"
@@ -187,11 +187,11 @@
 101-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:17-33
 102        </activity>
 103        <activity
-103-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:75:9-81:20
-104            android:name="com.armasconi.taskmaster.activities.AddTask"
-104-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:76:13-47
+103-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:66:9-72:20
+104            android:name="com.armasconi.taskmaster.activities.auth.VerifySignUp_Activity"
+104-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:67:13-66
 105            android:exported="false" >
-105-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:77:13-37
+105-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:68:13-37
 106            <meta-data
 106-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:13-24:36
 107                android:name="android.app.lib_name"
@@ -200,372 +200,450 @@
 108-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:17-33
 109        </activity>
 110        <activity
-110-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:82:9-94:20
-111            android:name="com.armasconi.taskmaster.activities.MainActivity"
-111-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:83:13-52
-112            android:exported="true" >
-112-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:84:13-36
-113            <intent-filter>
-113-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:85:13-89:29
-114                <action android:name="android.intent.action.MAIN" />
-114-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:86:17-69
-114-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:86:25-66
-115
-116                <category android:name="android.intent.category.LAUNCHER" />
-116-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:88:17-77
-116-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:88:27-74
-117            </intent-filter>
-118
-119            <meta-data
-119-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:13-24:36
-120                android:name="android.app.lib_name"
-120-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:23:17-52
-121                android:value="" />
-121-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:17-33
-122        </activity>
-123        <activity
-123-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:36:9-40:75
-124            android:name="com.amplifyframework.auth.cognito.activities.CustomTabsManagerActivity"
-124-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:37:13-98
-125            android:exported="false"
-125-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:38:13-37
-126            android:launchMode="singleTask"
-126-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:39:13-44
-127            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-127-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:40:13-72
-128        <activity
-128-->[com.amplifyframework:core:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/1a355f8567c5c4cedd946e8a0af1af97/transformed/core-2.0.0/AndroidManifest.xml:27:9-29:54
-129            android:name="com.amplifyframework.devmenu.DeveloperMenuActivity"
-129-->[com.amplifyframework:core:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/1a355f8567c5c4cedd946e8a0af1af97/transformed/core-2.0.0/AndroidManifest.xml:28:13-78
-130            android:theme="@style/OverlayActivity" />
-130-->[com.amplifyframework:core:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/1a355f8567c5c4cedd946e8a0af1af97/transformed/core-2.0.0/AndroidManifest.xml:29:13-51
+110-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:73:9-79:20
+111            android:name="com.armasconi.taskmaster.activities.MyTasksActivity"
+111-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:74:13-55
+112            android:exported="false" >
+112-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:75:13-37
+113            <meta-data
+113-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:13-24:36
+114                android:name="android.app.lib_name"
+114-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:23:17-52
+115                android:value="" />
+115-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:17-33
+116        </activity>
+117        <activity
+117-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:80:9-86:20
+118            android:name="com.armasconi.taskmaster.activities.TaskDetails"
+118-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:81:13-51
+119            android:exported="false" >
+119-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:82:13-37
+120            <meta-data
+120-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:13-24:36
+121                android:name="android.app.lib_name"
+121-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:23:17-52
+122                android:value="" />
+122-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:17-33
+123        </activity>
+124        <activity
+124-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:87:9-93:20
+125            android:name="com.armasconi.taskmaster.activities.AddTask"
+125-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:88:13-47
+126            android:exported="false" >
+126-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:89:13-37
+127            <meta-data
+127-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:13-24:36
+128                android:name="android.app.lib_name"
+128-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:23:17-52
+129                android:value="" />
+129-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:17-33
+130        </activity>
 131        <activity
-131-->[com.google.android.gms:play-services-base:18.1.0] /Users/armasconi/.gradle/caches/transforms-3/75e11374b42ba83fd12d55e4ccb129ba/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
-132            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-132-->[com.google.android.gms:play-services-base:18.1.0] /Users/armasconi/.gradle/caches/transforms-3/75e11374b42ba83fd12d55e4ccb129ba/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
-133            android:exported="false"
-133-->[com.google.android.gms:play-services-base:18.1.0] /Users/armasconi/.gradle/caches/transforms-3/75e11374b42ba83fd12d55e4ccb129ba/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
-134            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-134-->[com.google.android.gms:play-services-base:18.1.0] /Users/armasconi/.gradle/caches/transforms-3/75e11374b42ba83fd12d55e4ccb129ba/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
-135
-136        <meta-data
-136-->[com.google.android.gms:play-services-basement:18.1.0] /Users/armasconi/.gradle/caches/transforms-3/22101baaa08a513511d2fe6a33f29de4/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-137            android:name="com.google.android.gms.version"
-137-->[com.google.android.gms:play-services-basement:18.1.0] /Users/armasconi/.gradle/caches/transforms-3/22101baaa08a513511d2fe6a33f29de4/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-138            android:value="@integer/google_play_services_version" />
-138-->[com.google.android.gms:play-services-basement:18.1.0] /Users/armasconi/.gradle/caches/transforms-3/22101baaa08a513511d2fe6a33f29de4/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+131-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:94:9-106:20
+132            android:name="com.armasconi.taskmaster.activities.MainActivity"
+132-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:95:13-52
+133            android:exported="true" >
+133-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:96:13-36
+134            <intent-filter>
+134-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:97:13-101:29
+135                <action android:name="android.intent.action.MAIN" />
+135-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:98:17-69
+135-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:98:25-66
+136
+137                <category android:name="android.intent.category.LAUNCHER" />
+137-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:100:17-77
+137-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:100:27-74
+138            </intent-filter>
 139
-140        <activity
-140-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:27:9-34:20
-141            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
-141-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:28:13-99
-142            android:exported="false"
-142-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:30:13-37
-143            android:theme="@android:style/Theme" >
-143-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:29:13-49
-144            <intent-filter>
-144-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:31:13-33:29
-145                <action android:name="android.intent.action.MAIN" />
-145-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:86:17-69
-145-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:86:25-66
-146            </intent-filter>
-147        </activity>
-148        <activity
-148-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:35:9-42:20
-149            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
-149-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:36:13-95
-150            android:exported="false"
-150-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:38:13-37
-151            android:theme="@android:style/Theme" >
-151-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:37:13-49
-152            <intent-filter>
-152-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:31:13-33:29
-153                <action android:name="android.intent.action.MAIN" />
-153-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:86:17-69
-153-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:86:25-66
-154            </intent-filter>
-155        </activity>
-156        <activity
-156-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:43:9-50:20
-157            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
-157-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:44:13-103
-158            android:exported="false"
-158-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:46:13-37
-159            android:theme="@android:style/Theme.Dialog" >
-159-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:45:13-56
-160            <intent-filter>
-160-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:31:13-33:29
-161                <action android:name="android.intent.action.MAIN" />
-161-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:86:17-69
-161-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:86:25-66
-162            </intent-filter>
-163        </activity>
-164
-165        <provider
-165-->[androidx.emoji2:emoji2:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-166            android:name="androidx.startup.InitializationProvider"
-166-->[androidx.emoji2:emoji2:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-167            android:authorities="com.armasconi.taskmaster.androidx-startup"
-167-->[androidx.emoji2:emoji2:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-168            android:exported="false" >
-168-->[androidx.emoji2:emoji2:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-169            <meta-data
-169-->[androidx.emoji2:emoji2:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-170                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-170-->[androidx.emoji2:emoji2:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-171                android:value="androidx.startup" />
-171-->[androidx.emoji2:emoji2:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-172            <meta-data
-172-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
-173                android:name="androidx.work.WorkManagerInitializer"
-173-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
-174                android:value="androidx.startup" />
-174-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
-175            <meta-data
-175-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/armasconi/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-176                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-176-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/armasconi/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-177                android:value="androidx.startup" />
-177-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/armasconi/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-178        </provider>
-179
-180        <service
-180-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
-181            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
-181-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
-182            android:directBootAware="false"
-182-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
-183            android:enabled="@bool/enable_system_alarm_service_default"
-183-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
-184            android:exported="false" />
-184-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
-185        <service
-185-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
-186            android:name="androidx.work.impl.background.systemjob.SystemJobService"
-186-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
-187            android:directBootAware="false"
-187-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
-188            android:enabled="@bool/enable_system_job_service_default"
-188-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
-189            android:exported="true"
-189-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
-190            android:permission="android.permission.BIND_JOB_SERVICE" />
-190-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
-191        <service
-191-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
-192            android:name="androidx.work.impl.foreground.SystemForegroundService"
-192-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
-193            android:directBootAware="false"
-193-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
-194            android:enabled="@bool/enable_system_foreground_service_default"
-194-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
-195            android:exported="false" />
-195-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
-196
-197        <receiver
-197-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
-198            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
-198-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
-199            android:directBootAware="false"
-199-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
-200            android:enabled="true"
-200-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
-201            android:exported="false" />
-201-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
-202        <receiver
-202-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
-203            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
-203-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
-204            android:directBootAware="false"
-204-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
-205            android:enabled="false"
-205-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
-206            android:exported="false" >
-206-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
-207            <intent-filter>
-207-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
-208                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-208-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
-208-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
-209                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-209-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
-209-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
-210            </intent-filter>
-211        </receiver>
-212        <receiver
-212-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
-213            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
-213-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
-214            android:directBootAware="false"
-214-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
-215            android:enabled="false"
-215-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
-216            android:exported="false" >
-216-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
-217            <intent-filter>
-217-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
-218                <action android:name="android.intent.action.BATTERY_OKAY" />
-218-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
-218-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
-219                <action android:name="android.intent.action.BATTERY_LOW" />
-219-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
-219-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
-220            </intent-filter>
-221        </receiver>
-222        <receiver
-222-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
-223            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
-223-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+140            <meta-data
+140-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:22:13-24:36
+141                android:name="android.app.lib_name"
+141-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:23:17-52
+142                android:value="" />
+142-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:24:17-33
+143        </activity>
+144        <activity
+144-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:36:9-40:75
+145            android:name="com.amplifyframework.auth.cognito.activities.CustomTabsManagerActivity"
+145-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:37:13-98
+146            android:exported="false"
+146-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:38:13-37
+147            android:launchMode="singleTask"
+147-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:39:13-44
+148            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+148-->[com.amplifyframework:aws-auth-cognito:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/da6e71465f0681d9bf4570413c543ce3/transformed/aws-auth-cognito-2.0.0/AndroidManifest.xml:40:13-72
+149        <activity
+149-->[com.amplifyframework:core:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/1a355f8567c5c4cedd946e8a0af1af97/transformed/core-2.0.0/AndroidManifest.xml:27:9-29:54
+150            android:name="com.amplifyframework.devmenu.DeveloperMenuActivity"
+150-->[com.amplifyframework:core:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/1a355f8567c5c4cedd946e8a0af1af97/transformed/core-2.0.0/AndroidManifest.xml:28:13-78
+151            android:theme="@style/OverlayActivity" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+151-->[com.amplifyframework:core:2.0.0] /Users/armasconi/.gradle/caches/transforms-3/1a355f8567c5c4cedd946e8a0af1af97/transformed/core-2.0.0/AndroidManifest.xml:29:13-51
+152        <activity
+152-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:50:9-55:43
+153            android:name="com.google.android.gms.ads.AdActivity"
+153-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:51:13-65
+154            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+154-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:52:13-122
+155            android:exported="false"
+155-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:53:13-37
+156            android:theme="@android:style/Theme.Translucent" />
+156-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:54:13-61
+157
+158        <provider
+158-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:57:9-62:43
+159            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+159-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:58:13-76
+160            android:authorities="com.armasconi.taskmaster.mobileadsinitprovider"
+160-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:59:13-73
+161            android:exported="false"
+161-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:60:13-37
+162            android:initOrder="100" />
+162-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:61:13-36
+163
+164        <service
+164-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:64:9-68:43
+165            android:name="com.google.android.gms.ads.AdService"
+165-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:65:13-64
+166            android:enabled="true"
+166-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:66:13-35
+167            android:exported="false" />
+167-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:67:13-37
+168
+169        <activity
+169-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:70:9-74:43
+170            android:name="com.google.android.gms.ads.OutOfContextTestingActivity"
+170-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:71:13-82
+171            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+171-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:72:13-122
+172            android:exported="false" />
+172-->[com.google.android.gms:play-services-ads-lite:21.4.0] /Users/armasconi/.gradle/caches/transforms-3/3ea9d2a072a5c4e9644c8dbc55abb78b/transformed/play-services-ads-lite-21.4.0/AndroidManifest.xml:73:13-37
+173        <activity
+173-->[com.google.android.gms:play-services-base:18.1.0] /Users/armasconi/.gradle/caches/transforms-3/75e11374b42ba83fd12d55e4ccb129ba/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+174            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+174-->[com.google.android.gms:play-services-base:18.1.0] /Users/armasconi/.gradle/caches/transforms-3/75e11374b42ba83fd12d55e4ccb129ba/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+175            android:exported="false"
+175-->[com.google.android.gms:play-services-base:18.1.0] /Users/armasconi/.gradle/caches/transforms-3/75e11374b42ba83fd12d55e4ccb129ba/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+176            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+176-->[com.google.android.gms:play-services-base:18.1.0] /Users/armasconi/.gradle/caches/transforms-3/75e11374b42ba83fd12d55e4ccb129ba/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+177
+178        <meta-data
+178-->[com.google.android.gms:play-services-basement:18.1.0] /Users/armasconi/.gradle/caches/transforms-3/22101baaa08a513511d2fe6a33f29de4/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+179            android:name="com.google.android.gms.version"
+179-->[com.google.android.gms:play-services-basement:18.1.0] /Users/armasconi/.gradle/caches/transforms-3/22101baaa08a513511d2fe6a33f29de4/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+180            android:value="@integer/google_play_services_version" />
+180-->[com.google.android.gms:play-services-basement:18.1.0] /Users/armasconi/.gradle/caches/transforms-3/22101baaa08a513511d2fe6a33f29de4/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+181
+182        <activity
+182-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:27:9-34:20
+183            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+183-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:28:13-99
+184            android:exported="false"
+184-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:30:13-37
+185            android:theme="@android:style/Theme" >
+185-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:29:13-49
+186            <intent-filter>
+186-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:31:13-33:29
+187                <action android:name="android.intent.action.MAIN" />
+187-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:98:17-69
+187-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:98:25-66
+188            </intent-filter>
+189        </activity>
+190        <activity
+190-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:35:9-42:20
+191            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+191-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:36:13-95
+192            android:exported="false"
+192-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:38:13-37
+193            android:theme="@android:style/Theme" >
+193-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:37:13-49
+194            <intent-filter>
+194-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:31:13-33:29
+195                <action android:name="android.intent.action.MAIN" />
+195-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:98:17-69
+195-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:98:25-66
+196            </intent-filter>
+197        </activity>
+198        <activity
+198-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:43:9-50:20
+199            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+199-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:44:13-103
+200            android:exported="false"
+200-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:46:13-37
+201            android:theme="@android:style/Theme.Dialog" >
+201-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:45:13-56
+202            <intent-filter>
+202-->[androidx.test:core:1.3.0] /Users/armasconi/.gradle/caches/transforms-3/47c4126e7443fc166e293c6b615ea0e4/transformed/core-1.3.0/AndroidManifest.xml:31:13-33:29
+203                <action android:name="android.intent.action.MAIN" />
+203-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:98:17-69
+203-->/Users/armasconi/401/AndroidStudioProjects/taskmaster copy/app/src/main/AndroidManifest.xml:98:25-66
+204            </intent-filter>
+205        </activity>
+206
+207        <provider
+207-->[androidx.emoji2:emoji2:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+208            android:name="androidx.startup.InitializationProvider"
+208-->[androidx.emoji2:emoji2:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+209            android:authorities="com.armasconi.taskmaster.androidx-startup"
+209-->[androidx.emoji2:emoji2:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+210            android:exported="false" >
+210-->[androidx.emoji2:emoji2:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+211            <meta-data
+211-->[androidx.emoji2:emoji2:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+212                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+212-->[androidx.emoji2:emoji2:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+213                android:value="androidx.startup" />
+213-->[androidx.emoji2:emoji2:1.2.0] /Users/armasconi/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+214            <meta-data
+214-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
+215                android:name="androidx.work.WorkManagerInitializer"
+215-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
+216                android:value="androidx.startup" />
+216-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
+217            <meta-data
+217-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/armasconi/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+218                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+218-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/armasconi/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+219                android:value="androidx.startup" />
+219-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/armasconi/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+220        </provider>
+221
+222        <service
+222-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+223            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+223-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
 224            android:directBootAware="false"
-224-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
-225            android:enabled="false"
-225-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
-226            android:exported="false" >
-226-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
-227            <intent-filter>
-227-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
-228                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
-228-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
-228-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
-229                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
-229-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
-229-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
-230            </intent-filter>
-231        </receiver>
-232        <receiver
-232-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
-233            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
-233-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
-234            android:directBootAware="false"
-234-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
-235            android:enabled="false"
-235-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
-236            android:exported="false" >
-236-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
-237            <intent-filter>
-237-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
-238                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-238-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
-238-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
-239            </intent-filter>
-240        </receiver>
-241        <receiver
-241-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
-242            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
-242-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
-243            android:directBootAware="false"
-243-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
-244            android:enabled="false"
-244-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
-245            android:exported="false" >
-245-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
-246            <intent-filter>
-246-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
-247                <action android:name="android.intent.action.BOOT_COMPLETED" />
-247-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
-247-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
-248                <action android:name="android.intent.action.TIME_SET" />
-248-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
-248-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
-249                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-249-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
-249-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
-250            </intent-filter>
-251        </receiver>
-252        <receiver
-252-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
-253            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
-253-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
-254            android:directBootAware="false"
-254-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
-255            android:enabled="@bool/enable_system_alarm_service_default"
-255-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
-256            android:exported="false" >
-256-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
-257            <intent-filter>
-257-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
-258                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
-258-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
-258-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
-259            </intent-filter>
-260        </receiver>
-261        <receiver
-261-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
-262            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
-262-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
-263            android:directBootAware="false"
-263-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
-264            android:enabled="true"
-264-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
-265            android:exported="true"
-265-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
-266            android:permission="android.permission.DUMP" >
-266-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
-267            <intent-filter>
-267-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
-268                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
-268-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
-268-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
-269            </intent-filter>
-270        </receiver>
-271
-272        <service
-272-->[androidx.room:room-runtime:2.2.5] /Users/armasconi/.gradle/caches/transforms-3/c747649833e5d992ced321f763124585/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
-273            android:name="androidx.room.MultiInstanceInvalidationService"
-273-->[androidx.room:room-runtime:2.2.5] /Users/armasconi/.gradle/caches/transforms-3/c747649833e5d992ced321f763124585/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
-274            android:directBootAware="true"
-274-->[androidx.room:room-runtime:2.2.5] /Users/armasconi/.gradle/caches/transforms-3/c747649833e5d992ced321f763124585/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
-275            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
-275-->[androidx.room:room-runtime:2.2.5] /Users/armasconi/.gradle/caches/transforms-3/c747649833e5d992ced321f763124585/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
-276        <activity
-276-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:12:5-271
-277            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
-277-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:12:15-102
-278            android:enabled="false"
-278-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:12:103-126
-279            android:exported="false"
-279-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:12:127-151
-280            android:launchMode="singleInstance"
-280-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:12:204-239
-281            android:process=":playcore_missing_splits_activity"
-281-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:12:152-203
-282            android:stateNotNeeded="true" />
-282-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:12:240-269
-283        <activity
-283-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:13:5-226
-284            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
-284-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:13:15-95
-285            android:enabled="false"
-285-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:13:96-119
-286            android:exported="false"
-286-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:13:120-144
-287            android:stateNotNeeded="true"
-287-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:13:145-174
-288            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
-288-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:13:175-224
-289        <service
-289-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:16:5-18:15
-290            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
-290-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:16:14-95
-291            android:enabled="false"
-291-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:16:96-119
-292            android:exported="true" >
-292-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:16:120-143
-293            <meta-data
-293-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:17:7-108
-294                android:name="com.google.android.play.core.assetpacks.versionCode"
-294-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:17:18-84
-295                android:value="10901" />
-295-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:17:85-106
-296        </service>
-297        <service
-297-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:19:5-147
-298            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
-298-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:19:14-96
-299            android:enabled="false"
-299-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:19:97-120
-300            android:exported="false" />
-300-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:19:121-145
-301    </application>
-302
-303</manifest>
+224-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+225            android:enabled="@bool/enable_system_alarm_service_default"
+225-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+226            android:exported="false" />
+226-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+227        <service
+227-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+228            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+228-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+229            android:directBootAware="false"
+229-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+230            android:enabled="@bool/enable_system_job_service_default"
+230-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+231            android:exported="true"
+231-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+232            android:permission="android.permission.BIND_JOB_SERVICE" />
+232-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+233        <service
+233-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+234            android:name="androidx.work.impl.foreground.SystemForegroundService"
+234-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+235            android:directBootAware="false"
+235-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+236            android:enabled="@bool/enable_system_foreground_service_default"
+236-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+237            android:exported="false" />
+237-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+238
+239        <receiver
+239-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+240            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+240-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+241            android:directBootAware="false"
+241-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+242            android:enabled="true"
+242-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+243            android:exported="false" />
+243-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+244        <receiver
+244-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+245            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+245-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+246            android:directBootAware="false"
+246-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+247            android:enabled="false"
+247-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+248            android:exported="false" >
+248-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+249            <intent-filter>
+249-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+250                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+250-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+250-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+251                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+251-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+251-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+252            </intent-filter>
+253        </receiver>
+254        <receiver
+254-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+255            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+255-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+256            android:directBootAware="false"
+256-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+257            android:enabled="false"
+257-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+258            android:exported="false" >
+258-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+259            <intent-filter>
+259-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+260                <action android:name="android.intent.action.BATTERY_OKAY" />
+260-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+260-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+261                <action android:name="android.intent.action.BATTERY_LOW" />
+261-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+261-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+262            </intent-filter>
+263        </receiver>
+264        <receiver
+264-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+265            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+265-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+266            android:directBootAware="false"
+266-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+267            android:enabled="false"
+267-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+268            android:exported="false" >
+268-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+269            <intent-filter>
+269-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+270                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+270-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+270-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+271                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+271-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+271-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+272            </intent-filter>
+273        </receiver>
+274        <receiver
+274-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+275            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+275-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+276            android:directBootAware="false"
+276-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+277            android:enabled="false"
+277-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+278            android:exported="false" >
+278-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+279            <intent-filter>
+279-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+280                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+280-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+280-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+281            </intent-filter>
+282        </receiver>
+283        <receiver
+283-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+284            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+284-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+285            android:directBootAware="false"
+285-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+286            android:enabled="false"
+286-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+287            android:exported="false" >
+287-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+288            <intent-filter>
+288-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+289                <action android:name="android.intent.action.BOOT_COMPLETED" />
+289-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
+289-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
+290                <action android:name="android.intent.action.TIME_SET" />
+290-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+290-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+291                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+291-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+291-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+292            </intent-filter>
+293        </receiver>
+294        <receiver
+294-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+295            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+295-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+296            android:directBootAware="false"
+296-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+297            android:enabled="@bool/enable_system_alarm_service_default"
+297-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+298            android:exported="false" >
+298-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+299            <intent-filter>
+299-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+300                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+300-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+300-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+301            </intent-filter>
+302        </receiver>
+303        <receiver
+303-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+304            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+304-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+305            android:directBootAware="false"
+305-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+306            android:enabled="true"
+306-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+307            android:exported="true"
+307-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+308            android:permission="android.permission.DUMP" >
+308-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+309            <intent-filter>
+309-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+310                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+310-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+310-->[androidx.work:work-runtime:2.7.1] /Users/armasconi/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+311            </intent-filter>
+312        </receiver>
+313
+314        <service
+314-->[androidx.room:room-runtime:2.2.5] /Users/armasconi/.gradle/caches/transforms-3/c747649833e5d992ced321f763124585/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+315            android:name="androidx.room.MultiInstanceInvalidationService"
+315-->[androidx.room:room-runtime:2.2.5] /Users/armasconi/.gradle/caches/transforms-3/c747649833e5d992ced321f763124585/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+316            android:directBootAware="true"
+316-->[androidx.room:room-runtime:2.2.5] /Users/armasconi/.gradle/caches/transforms-3/c747649833e5d992ced321f763124585/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+317            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+317-->[androidx.room:room-runtime:2.2.5] /Users/armasconi/.gradle/caches/transforms-3/c747649833e5d992ced321f763124585/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+318        <activity
+318-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:12:5-271
+319            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+319-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:12:15-102
+320            android:enabled="false"
+320-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:12:103-126
+321            android:exported="false"
+321-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:12:127-151
+322            android:launchMode="singleInstance"
+322-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:12:204-239
+323            android:process=":playcore_missing_splits_activity"
+323-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:12:152-203
+324            android:stateNotNeeded="true" />
+324-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:12:240-269
+325        <activity
+325-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:13:5-226
+326            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+326-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:13:15-95
+327            android:enabled="false"
+327-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:13:96-119
+328            android:exported="false"
+328-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:13:120-144
+329            android:stateNotNeeded="true"
+329-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:13:145-174
+330            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
+330-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:13:175-224
+331        <service
+331-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:16:5-18:15
+332            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+332-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:16:14-95
+333            android:enabled="false"
+333-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:16:96-119
+334            android:exported="true" >
+334-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:16:120-143
+335            <meta-data
+335-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:17:7-108
+336                android:name="com.google.android.play.core.assetpacks.versionCode"
+336-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:17:18-84
+337                android:value="10901" />
+337-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:17:85-106
+338        </service>
+339        <service
+339-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:19:5-147
+340            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
+340-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:19:14-96
+341            android:enabled="false"
+341-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:19:97-120
+342            android:exported="false" />
+342-->[com.google.android.play:core:1.9.1] /Users/armasconi/.gradle/caches/transforms-3/eb3849da830ce3e4a192818c9131a834/transformed/core-1.9.1/AndroidManifest.xml:19:121-145
+343    </application>
+344
+345</manifest>

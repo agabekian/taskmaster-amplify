@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.armasconi.taskmaster.app-mergeDebugResources-43:/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "com.armasconi.taskmaster.app-mergeDebugResources-45:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
                     "source": "/Users/armasconi/.gradle/caches/transforms-3/d1182ac9010646c74e629f347fb2d565/transformed/browser-1.4.0/res/values-en-rAU/values-en-rAU.xml",

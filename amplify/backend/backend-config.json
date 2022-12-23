@@ -10,8 +10,8 @@
             "authenticationType": "API_KEY",
             "apiKeyConfig": {
               "apiKeyExpirationDays": 365,
-              "apiKeyExpirationDate": "2023-12-15T00:37:08.393Z",
-              "description": ""
+              "apiKeyExpirationDate": "2023-12-23T00:27:11.596Z",
+              "description": "defaulKey"
             }
           },
           "additionalAuthenticationProviders": []
@@ -20,7 +20,7 @@
     }
   },
   "auth": {
-    "taskmastercopy529e5ba9": {
+    "taskmastercopy068afb42": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -48,7 +48,7 @@
     }
   },
   "storage": {
-    "mystuff": {
+    "s36e99b139": {
       "service": "S3",
       "providerPlugin": "awscloudformation",
       "dependsOn": []

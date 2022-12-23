@@ -8,6 +8,7 @@ import com.amplifyframework.analytics.pinpoint.AWSPinpointAnalyticsPlugin;
 import com.amplifyframework.api.aws.AWSApiPlugin;
 import com.amplifyframework.core.Amplify;
 import com.amplifyframework.auth.cognito.AWSCognitoAuthPlugin;
+import com.amplifyframework.predictions.aws.AWSPredictionsPlugin;
 import com.amplifyframework.storage.s3.AWSS3StoragePlugin;
 
 
@@ -20,9 +21,9 @@ public class TaskMasterAmplifyApp extends Application {
         try {
             Amplify.addPlugin(new AWSApiPlugin());
             Amplify.addPlugin(new AWSCognitoAuthPlugin());
-            Amplify.addPlugin(new AWSS3StoragePlugin());
+            Amplify.addPlugin(new AWSPredictionsPlugin());
             Amplify.addPlugin(new AWSPinpointAnalyticsPlugin());
-
+            Amplify.addPlugin(new AWSS3StoragePlugin());
             Amplify.configure(getApplicationContext());
         } catch (AmplifyException ae) {
             Log.e(TAG, "Error on Amplify init" + ae.getMessage(), ae);

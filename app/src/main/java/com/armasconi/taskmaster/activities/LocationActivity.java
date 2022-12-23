@@ -41,7 +41,7 @@ public class LocationActivity extends AppCompatActivity {
         //TODO: Step 1-2 setup fusedLocationProviderClient
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         geocoder = new Geocoder(this, Locale.getDefault());
-//        getLocations();
+        getLocations();
         getLocationUpdates();
     }
 

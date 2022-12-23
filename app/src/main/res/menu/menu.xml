@@ -8,21 +8,22 @@
     <!--    app:showAsAction="ifRoom" />-->
     <item
         android:id="@+id/menuSignInItem"
-        android:icon="@drawable/ic_baseline_surfing_24"
         android:title="@string/signin" />
+    <item
+        android:id="@+id/menuVerify"
+        android:title="@string/verify" />
 
     <item
         android:id="@+id/menuSignUpItem"
-        android:icon="@drawable/ic_baseline_surfing_24"
         android:title="@string/signup" />
 
     <item
         android:id="@+id/menuSignOutItem"
-        android:icon="@drawable/ic_baseline_surfing_24"
         android:title="@string/signout" />
 
     <item
         android:id="@+id/MainActivityImageViewUserProfile"
         android:icon="@drawable/ic_baseline_surfing_24"
         android:title="@string/profile" />
+
 </menu>

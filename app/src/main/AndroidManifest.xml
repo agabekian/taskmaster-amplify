@@ -17,6 +17,18 @@
         android:theme="@style/Theme.Taskmaster"
         tools:targetApi="31">
         <activity
+            android:name=".activities.AdsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3779717397510597~6482765873" />
+
+        <activity
             android:name=".activities.Analytics_Activity"
             android:exported="false">
             <meta-data
