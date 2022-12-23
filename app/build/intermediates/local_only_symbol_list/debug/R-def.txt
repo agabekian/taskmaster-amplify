@@ -34,7 +34,6 @@ id MyTaskFragTVState
 id OrderFormTVProduct
 id SuperPetDeleteImage
 id SuperPetRecyclerView
-id UserProfileETPhoneNumber
 id UserProfileETTeam
 id UserProfileETUsername
 id UserProfileSaveBttn

@@ -52,12 +52,12 @@ public class UserProfileActivity extends AppCompatActivity {
             //method 1 to get input as a string
             String usernameText = ((EditText) findViewById(R.id.UserProfileETUsername)).getText().toString();
             //method 2 to get input as a string
-            EditText userPhoneNumber = findViewById(R.id.UserProfileETPhoneNumber);
-            String userPNString = userPhoneNumber.getText().toString();
+//            EditText userPhoneNumber = findViewById(R.id.UserProfileETPhoneNumber);
+//            String userPNString = userPhoneNumber.getText().toString();
             // method 1
             String userTeam = ((EditText) findViewById(R.id.UserProfileETTeam)).getText().toString();
             preferenceEditor.putString(USERNAME_TAG, usernameText);
-            preferenceEditor.putString(USER_PHONE_TAG, userPNString);
+//            preferenceEditor.putString(USER_PHONE_TAG, userPNString);
             preferenceEditor.putString(TEAMNAME_TAG, userTeam);
             preferenceEditor.apply(); // TODO: Nothing saves unless you do this, DONT FORGET!!
 

@@ -20,20 +20,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/UserProfileETPhoneNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
-        android:ems="10"
-        android:hint="@android:string/emptyPhoneNumber"
-        android:inputType="phone"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UserProfileETUsername" />
-
-    <EditText
         android:id="@+id/UserProfileETTeam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

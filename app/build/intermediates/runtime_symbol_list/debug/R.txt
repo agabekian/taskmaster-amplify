@@ -2768,7 +2768,6 @@ int id SuperPetDeleteImage 0x7f080019
 int id SuperPetRecyclerView 0x7f08001a
 int id TOP_END 0x7f08001b
 int id TOP_START 0x7f08001c
-int id UserProfileETPhoneNumber 0x7f08001d
 int id UserProfileETTeam 0x7f08001e
 int id UserProfileETUsername 0x7f08001f
 int id UserProfileSaveBttn 0x7f080020
