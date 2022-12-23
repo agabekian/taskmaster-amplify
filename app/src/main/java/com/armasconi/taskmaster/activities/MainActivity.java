@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.content.Intent;
 import android.preference.PreferenceManager;
@@ -16,15 +17,25 @@ import android.widget.Button;
 
 import android.widget.TextView;
 import android.widget.Toast;
-
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.Date;
 
 import com.amplifyframework.analytics.AnalyticsEvent;
+import com.amplifyframework.api.graphql.model.ModelMutation;
 import com.amplifyframework.auth.AuthUser;
 import com.amplifyframework.core.Amplify;
+import com.amplifyframework.datastore.generated.model.Team;
 import com.armasconi.taskmaster.R;
+
 import com.armasconi.taskmaster.activities.auth.SignIn_Activity;
-//import com.armasconi.taskmaster.activities.auth.SignUp_Activity;
-//import com.armasconi.taskmaster.activities.auth.VerifySignUp_Activity;
+import com.armasconi.taskmaster.activities.auth.SignUp_Activity;
+import com.armasconi.taskmaster.activities.auth.VerifySignUp_Activity;
 import com.armasconi.taskmaster.activities.util.SignOutAmplify;
 
 import java.util.Date;
@@ -33,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
     public final String TAG = "main_activity";
     public final static String SIGNUP_EMAIL_TAG = "email";
     public AuthUser authUser = null;
+    private final MediaPlayer mp = new MediaPlayer();
     Menu myMenu;
 
     @Override
@@ -44,10 +56,12 @@ public class MainActivity extends AppCompatActivity {
         MenuItem signUpItem = menu.findItem(R.id.menuSignUpItem);
         MenuItem signInItem = menu.findItem(R.id.menuSignInItem);
         MenuItem signOutItem = menu.findItem(R.id.menuSignOutItem);
+        MenuItem verifyItem = menu.findItem(R.id.menuVerify);
         if (authUser == null) {
             signUpItem.setVisible(true);
             signInItem.setVisible(true);
             signOutItem.setVisible(false);
+            verifyItem.setVisible(true);
         } else {
             signUpItem.setVisible(false);
             signInItem.setVisible(false);
@@ -70,6 +84,15 @@ public class MainActivity extends AppCompatActivity {
                 SignOutAmplify.SignOut();
                 return true;
 
+            case R.id.menuVerify:
+                Intent v = new Intent(this, VerifySignUp_Activity.class);
+                this.startActivity(v);
+                return true;
+            case R.id.menuSignUpItem:
+                Intent k = new Intent(this, SignUp_Activity.class);
+                this.startActivity(k);
+                return true;
+
             case R.id.MainActivityImageViewUserProfile:
                 Intent l = new Intent(this, UserProfileActivity.class);
                 this.startActivity(l);
@@ -84,14 +107,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        AnalyticsEvent event = AnalyticsEvent.builder()
-//                .name("Opened App")
-//                .addProperty("Time", Long.toString(new Date().getTime()))
-//                .addProperty("trackingEvent", "Main activity was opened")
-//                .build();
-//
-//        Amplify.Analytics.recordEvent(event);
+//        Amplify.Predictions.convertTextToSpeech(
+//                "I like to cha cha!",
+//                result -> playAudio(result.getAudioData()),
+//                error -> Log.e("MyAmplifyApp", "Conversion failed", error)
+//        );
 
+        AnalyticsEvent event = AnalyticsEvent.builder()
+                .name("Opened App")
+                .addProperty("Time", Long.toString(new Date().getTime()))
+                .addProperty("trackingEvent", "Main activity was opened")
+                .build();
+
+        Amplify.Analytics.recordEvent(event);
 
         // TODO Get the currentAuthUser
         Amplify.Auth.getCurrentUser(
@@ -104,6 +132,36 @@ public class MainActivity extends AppCompatActivity {
         setupButtons();
         setupGreeting();
     }
+    private void playAudio(InputStream data) {
+        File mp3File = new File(getCacheDir(), "audio.mp3");
+
+        try (OutputStream out = new FileOutputStream(mp3File)) {
+            Log.i(TAG, "Reading input stream");
+            byte[] buffer = new byte[8 * 1_024];
+            int bytesRead;
+            while ((bytesRead = data.read(buffer)) != -1) {
+                out.write(buffer, 0, bytesRead);
+            }
+            mp.reset();
+            mp.setOnPreparedListener(MediaPlayer::start);
+            mp.setDataSource(new FileInputStream(mp3File).getFD());
+            mp.prepareAsync();
+        } catch (IOException error) {
+            Log.e("MyAmplifyApp", "Error writing audio file", error);
+        }
+
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        AnalyticsEvent event = AnalyticsEvent.builder()
+                .name("Paused main activity")
+                .addProperty("Time", Long.toString(new Date().getTime()))
+                .addProperty("trackingEvent", "Main activity was paused")
+                .build();
+        Amplify.Analytics.recordEvent(event);
+    }
+
 
     @SuppressLint("SetTextI18n")
     public void setupGreeting() {
@@ -132,7 +190,11 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Getting location!", Toast.LENGTH_SHORT).show();
             startActivity(goToLocate);
         });
-
+        Button goToAdsActivity = findViewById(R.id.MainActivityAdsBttn);
+        goToAdsActivity.setOnClickListener(v -> {
+            Intent goToAdsActivityIntent = new Intent(this, AdsActivity.class);
+            startActivity(goToAdsActivityIntent);
+        });
 
     }
 }

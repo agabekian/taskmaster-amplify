@@ -55,19 +55,22 @@ Todo: fix time display in Tasks page.
 ```12.19.22```
 The app now logs location of the user (screenshot), if the permissions are explicitly enabled in google settings.
 ```12.20-21.22```
-Pinpoint analytics implemented (see aws screenshot)
+Pinpoint analytics (v. 2.0.0) implemented (see aws screenshot)
+Manifest error were referring to library.core.test.1.0.3 or something like that - needed export="false" explicitly in library manifest.
 
+```12.22.22```
+* Admob implemented. 
+* Minor fixes for signup and verify.
+
+![](screenshots/ads.png)
 ![](screenshots/Screenshot_20221212_165216.png)
-![](screenshots/Screenshot_20221212_185217.png)
-![](screenshots/login.png)
 ![](screenshots/signin.png)
 ![](screenshots/image.png)
 ![](screenshots/details.png)
 ![](screenshots/recycler.png)
 ![](screenshots/location.png)
 ![](scremenshots/AWS-analytics.png)
-
-
+![](screenshots/admob.png)
 
 
 

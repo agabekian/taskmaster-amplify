@@ -1,0 +1,8 @@
+        Team team = Team.builder()
+                .name("Team_A")
+                .build();
+        Amplify.API.mutate(
+                ModelMutation.create(team),
+                response -> Log.i(TAG, "team3 made successfully"), //success
+                response -> Log.i(TAG, response.toString())
+        ); // failure
